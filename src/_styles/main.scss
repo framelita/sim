@@ -10,6 +10,7 @@
 @import '../_modules/home-banner/home-banner';
 @import '../_modules/about-banner/about-banner';
 @import '../_modules/about-accordion/about-accordion';
+@import '../_modules/organisation-chart/organisation-chart';
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
@@ -46,6 +47,14 @@ a {
   font-weight: 300;
 }
 
+.title--gold {
+  color: $gold;
+}
+
 button {
   font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
 }

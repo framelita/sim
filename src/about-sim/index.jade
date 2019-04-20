@@ -4,6 +4,7 @@ include ../_modules/header/header
 include ../_modules/footer/footer
 include ../_modules/about-banner/about-banner
 include ../_modules/about-accordion/about-accordion
+include ../_modules/organisation-chart/organisation-chart
 
 block config
   //- Correct base url pathing for this page
@@ -14,4 +15,5 @@ block content
   main.main
     +about-banner()
     +about-accordion()
+    +organisation-chart()
   +footer()

@@ -1,0 +1,8 @@
+mixin organisation-chart(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  .organisation-chart(class=spec.__class)&attributes(attributes)
+    .container
+      h2.title.title--gold Organisation Chart
+      img.organisation-chart__image(src="../images/org-chart.jpg")
