@@ -1,0 +1,11 @@
+mixin footer(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  footer.footer(class=spec.__class)&attributes(attributes)
+    .container
+      a.footer__link(href="http://www.sim.edu.sg" target="_blank") www.sim.edu.sg
+      .footer__content
+        span &copy; 2019 Singapore Institute of Management
+        a.footer__link(href="http://www.sim.edu.sg/Pages/Terms-of-Use.aspx" target="_blank") Terms of Use
+        a.footer__link(href="http://www.sim.edu.sg/about-sim/pages/dataprivacy.aspx" target="_blank") Data Privacy
