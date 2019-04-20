@@ -1,8 +1,15 @@
 'use strict';
 
+import $ from 'jquery';
 export default class Header {
   constructor() {
-    this.name = 'header';
-    console.log('%s module', this.name.toLowerCase());
+    $('.header__item')
+      .on('mouseenter', function(e) {
+        let $this = $(this);
+        $this.addClass('is-show');
+      })
+      .on('mouseleave', function() {
+        $('.header__item').removeClass('is-show');
+      });
   }
 }

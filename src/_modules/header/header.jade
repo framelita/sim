@@ -2,5 +2,16 @@ mixin header(spec)
   - spec = spec || {}
   - spec.__class = spec.__class || ''
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the header module
+  header.header(class=spec.__class)&attributes(attributes)
+    .container
+      a.header__logo(href="#")
+        img(src="./images/logo.jpg")
+      ul.header__navigation
+        each item in site.data.navigation
+          li.header__item
+            a.header__link(href=item.link)=item.text
+            if item.menu
+              ul.header__dropdown
+                each child in item.menu
+                  li.child__item
+                    a.child__link(href=child.link)=child.text

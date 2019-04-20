@@ -4,9 +4,9 @@
 'use strict';
 
 import $ from 'jquery';
-import Link from '../_modules/link/link';
+import Header from '../_modules/header/header';
 
 $(() => {
-  new Link(); // Activate Link modules logic
+  new Header(); // Activate Header modules logic
   console.log('Welcome to Yeogurt!');
 });
