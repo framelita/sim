@@ -10,12 +10,12 @@
 @import '../_modules/home-banner/home-banner';
 @import '../_modules/about-banner/about-banner';
 @import '../_modules/about-accordion/about-accordion';
-@import '../_modules/organisation-chart/organisation-chart';
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
 body {
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
 }
 *,
 *:before,
@@ -45,10 +45,16 @@ a {
 
 .title {
   font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .title--gold {
   color: $gold;
+}
+
+.title--white {
+  color: #fff;
 }
 
 button {
@@ -57,4 +63,17 @@ button {
 
 img {
   max-width: 100%;
+}
+
+.bg--gold {
+  background: $gold;
+  color: #fff;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
 }
