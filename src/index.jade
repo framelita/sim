@@ -2,8 +2,11 @@ extends _layouts/base
 
 include _modules/header/header
 include _modules/footer/footer
+include _modules/home-banner/home-banner
 
 block content
   +header()
-  main
+  main.main
+    each item in site.data.home
+      +home-banner(item)
   +footer()

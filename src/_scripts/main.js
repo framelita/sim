@@ -5,8 +5,9 @@
 
 import $ from 'jquery';
 import Header from '../_modules/header/header';
+import HomeBanner from '../_modules/home-banner/home-banner';
 
 $(() => {
-  new Header(); // Activate Header modules logic
-  console.log('Welcome to Yeogurt!');
+  new Header();
+  new HomeBanner();
 });

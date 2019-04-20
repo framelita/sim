@@ -1,0 +1,60 @@
+// home-banner styles
+.home-banner {
+  min-height: calc(100vh - 92px);
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.is-reversed {
+    .container {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.home-banner__title {
+  font-weight: 400;
+  border: 4px solid #fff;
+  background: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  line-height: 1;
+  font-size: 1.875rem;
+
+  .hashtag {
+    display: inline-block;
+    color: #000;
+    background: #fff;
+    padding: 5px 8px;
+  }
+
+  .text {
+    padding: 5px 10px;
+    display: inline-block;
+    opacity: 0;
+
+    &.is-show {
+      opacity: 1;
+    }
+  }
+}
+
+.home-banner__content {
+  color: #fff;
+  width: 50%;
+  line-height: 1.4;
+}
+
+.home-banner__text {
+  max-width: 400px;
+}
+
+.home-banner__video {
+  transition: opacity 0.25s ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
+}

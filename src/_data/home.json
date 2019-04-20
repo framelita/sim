@@ -1,0 +1,38 @@
+[
+  {
+    "title": "dare2b<strong>MORE</strong>",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis magna id lorem eleifend porttitor. Nunc ultrices, nibh nec rhoncus dapibus, nulla sapien aliquet orci, ut tempus metus nisl ac ipsum. Cras ut lacus venenatis, varius ex eu, congue velit. Nunc interdum aliquam ante et sollicitudin. Curabitur tincidunt tellus at imperdiet sodales. Quisque iaculis, quam eget semper iaculis, dui eros tincidunt libero, id elementum enim libero in tellus.",
+    "image": "./images/home-banner-1.jpg",
+    "video": "#",
+    "color": "#171006"
+  },
+  {
+    "title": "dare2b<strong>OPTIMISED</strong>",
+    "text": "We see in all learners who come through our doors the potential to be the best they can be in whatever track they choose, whether for their learning or careers. Our range of certificated and continuing education and training programmes are curated to serve changing market needs. They equip our learners with up-to-date market-relevant knowledge and skills so that they are optimised to perform at their peak, and to take on challenges and opportunities at every stage of their career.",
+    "image": "./images/home-banner-2.jpg",
+    "video": "#",
+    "color": "#2d1b21"
+  },
+  {
+    "title": "dare2b<strong>EXCEPTIONAL</strong>",
+    "text": "Success takes more than technical competence. Good grades may open doors but it is soft skills that give the edge and transferable value. With a plethora of extracurricular activities, personal and career development programmes, we encourage our students to seize every opportunity to develop a strong work ethic and exceptional qualities such as leadership, critical  thinking, communications, teamwork, flexibility and grit that will help them stand out and ace.",
+    "image": "./images/home-banner-3.jpg",
+    "video": "#",
+    "color": "#06110a"
+  },
+  {
+    "title": "dare2b<strong>CHALLENGED</strong>",
+    "text": "The ability to unlearn and learn is an imperative in today’s exponentially changing world. Our thought leadership programmes expose our learners to new and leading edge insights from prominent global leaders and speakers. Learning from the best and seeing from a different perspective challenges them to question the norm and inspires creative ideas that can break new ground and spark radical change.",
+    "image": "./images/home-banner-4.jpg",
+    "__class": "is-reversed",
+    "video": "#",
+    "color": "#151e29"
+  },
+  {
+    "title": "dare2b<strong>COUNTED</strong>",
+    "text": "Often it’s not just what we know but who we know that matters. At the heart of our inclusive network of learners are our members, students, alumni, partners, trainers, lecturers and staff. What gives this community vibrancy and value is the fact that everyone’s voice counts. We encourage every beneficiary of this community to add to its richness by staying connected, sharing ideas, giving feedback and making a difference.",
+    "image": "./images/home-banner-5.jpg",
+    "video": "#",
+    "color": "#170500"
+  }
+]
