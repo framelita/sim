@@ -1,0 +1,41 @@
+mixin about-accordion(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  .about-accordion(class=spec.__class)&attributes(attributes)
+    .container
+      p Today, the SIM Group is a diverse and vibrant organisation that caters to different segments of learners through the following brands:
+      .about-accordion__list
+        button.about-accordion__button.js-about-accordion(type="button" data-target="global")
+          span.text SIM Global Education
+          img.img(src="../images/arrow-down.png")
+        .about-accordion__content(data-target="global")
+          p <strong>SIM Global Education (SIM GE)</strong> is the leading private education institution in Singapore. It offers more than 80 academic programmes ranging from its own diploma and graduate diploma courses to Bachelor’s and Master’s programmes with top ranking and reputable universities from Australia, Europe, the United Kingdom and the United States. With an enrolment of about 18,000 full and part-time students and adult learners from over 40 countries with about 20% being full-time international students, SIM GE’s holistic learning approach and culturally diverse learning environment aim to equip students with an all-rounded global education. Besides building competencies and skills needed to thrive in the real world, SIM GE also hones the soft skills of students through a wide range of student life, career development and networking activities.
+        button.about-accordion__button.js-about-accordion(type="button" data-target="international")
+          span.text SIM International Academy
+          img.img(src="../images/arrow-down.png")
+        .about-accordion__content(data-target="international")
+          p <strong>SIM Global Education (SIM GE)</strong> is the leading private education institution in Singapore. It offers more than 80 academic programmes ranging from its own diploma and graduate diploma courses to Bachelor’s and Master’s programmes with top ranking and reputable universities from Australia, Europe, the United Kingdom and the United States. With an enrolment of about 18,000 full and part-time students and adult learners from over 40 countries with about 20% being full-time international students, SIM GE’s holistic learning approach and culturally diverse learning environment aim to equip students with an all-rounded global education. Besides building competencies and skills needed to thrive in the real world, SIM GE also hones the soft skills of students through a wide range of student life, career development and networking activities.
+        button.about-accordion__button.js-about-accordion(type="button" data-target="cambodia")
+          span.text Singapore (Cambodia) International Academy
+          img.img(src="../images/arrow-down.png")
+        .about-accordion__content(data-target="cambodia")
+          p <strong>SIM Global Education (SIM GE)</strong> is the leading private education institution in Singapore. It offers more than 80 academic programmes ranging from its own diploma and graduate diploma courses to Bachelor’s and Master’s programmes with top ranking and reputable universities from Australia, Europe, the United Kingdom and the United States. With an enrolment of about 18,000 full and part-time students and adult learners from over 40 countries with about 20% being full-time international students, SIM GE’s holistic learning approach and culturally diverse learning environment aim to equip students with an all-rounded global education. Besides building competencies and skills needed to thrive in the real world, SIM GE also hones the soft skills of students through a wide range of student life, career development and networking activities.
+        button.about-accordion__button.js-about-accordion(type="button" data-target="professional")
+          span.text SIM Professional Development
+          img.img(src="../images/arrow-down.png")
+        .about-accordion__content(data-target="professional")
+          p <strong>SIM Global Education (SIM GE)</strong> is the leading private education institution in Singapore. It offers more than 80 academic programmes ranging from its own diploma and graduate diploma courses to Bachelor’s and Master’s programmes with top ranking and reputable universities from Australia, Europe, the United Kingdom and the United States. With an enrolment of about 18,000 full and part-time students and adult learners from over 40 countries with about 20% being full-time international students, SIM GE’s holistic learning approach and culturally diverse learning environment aim to equip students with an all-rounded global education. Besides building competencies and skills needed to thrive in the real world, SIM GE also hones the soft skills of students through a wide range of student life, career development and networking activities.
+        button.about-accordion__button.js-about-accordion(type="button" data-target="platform")
+          span.text Platform E
+          img.img(src="../images/arrow-down.png")
+        .about-accordion__content(data-target="platform")
+          p <strong>SIM Global Education (SIM GE)</strong> is the leading private education institution in Singapore. It offers more than 80 academic programmes ranging from its own diploma and graduate diploma courses to Bachelor’s and Master’s programmes with top ranking and reputable universities from Australia, Europe, the United Kingdom and the United States. With an enrolment of about 18,000 full and part-time students and adult learners from over 40 countries with about 20% being full-time international students, SIM GE’s holistic learning approach and culturally diverse learning environment aim to equip students with an all-rounded global education. Besides building competencies and skills needed to thrive in the real world, SIM GE also hones the soft skills of students through a wide range of student life, career development and networking activities.
+
+
+
+
+
+
+
+

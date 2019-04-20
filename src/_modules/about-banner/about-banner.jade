@@ -1,0 +1,13 @@
+mixin about-banner(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  .about-banner(class=spec.__class)&attributes(attributes)
+    .container
+      h1.title.about-banner__title Who We Are
+      .about-banner__content
+        p The Singapore Institute of Management (SIM Group) is a leading private education and lifelong learning institution in Singapore. We offer a diverse range of education pathways and professional training and are known for the rigour and quality of our programmes.
+        p Founded in 1964 on the initiative of the Economic Development Board to support Singapore’s industrialisation, SIM is a professional society with over 35,000 individual and corporate members who have access to a wide range of learning courses, published resources and networking events.
+
+
+

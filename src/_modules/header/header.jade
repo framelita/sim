@@ -1,11 +1,12 @@
 mixin header(spec)
   - spec = spec || {}
   - spec.__class = spec.__class || ''
+  - spec.baseUrl = spec.baseUrl || './'
 
   header.header(class=spec.__class)&attributes(attributes)
     .container
       a.header__logo(href="#")
-        img(src="./images/logo.jpg")
+        img(src="#{spec.baseUrl}images/logo.jpg")
       ul.header__navigation
         each item in site.data.navigation
           li.header__item
