@@ -96,10 +96,6 @@
   display: none;
   line-height: 1.4;
 
-  .is-show + & {
-    display: block;
-  }
-
   &[data-target="global"] {
     strong {
       color: $simGreen;
