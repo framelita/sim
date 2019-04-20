@@ -2,13 +2,14 @@
 .home-banner {
   min-height: calc(100vh - 92px);
   background-size: auto 100%;
-  background-position: center center;
+  background-position: right center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
 
   &.is-reversed {
+    background-position: left center;
     .container {
       display: flex;
       justify-content: flex-end;
@@ -22,13 +23,15 @@
   background: rgba(0, 0, 0, 0.6);
   display: inline-block;
   line-height: 1;
-  font-size: 1.875rem;
+  margin-bottom: 8px;
+  font-size: 2rem;
+  font-family: 'Open Sans Condensed', sans-serif;
 
   .hashtag {
     display: inline-block;
     color: #000;
     background: #fff;
-    padding: 5px 8px;
+    padding: 5px 8px 5px 3px;
   }
 
   .text {

@@ -16,20 +16,20 @@ export default class HomeBanner {
         .css({
           width: width
         })
-        .text('')
+        // .text('')
         .addClass('is-show');
 
-      typeWriter();
+      // typeWriter();
 
-      function typeWriter() {
-        if (i < txt.length) {
-          let text = $this.text() + txt.charAt(i);
-          console.log(text, txt.charAt(i));
-          $this.text( text );
-          i++;
-          setTimeout(typeWriter, speed);
-        }
-      }
+      // function typeWriter() {
+      //   if (i < txt.length) {
+      //     let text = $this.text() + txt.charAt(i);
+      //     console.log(text, txt.charAt(i));
+      //     $this.text( text );
+      //     i++;
+      //     setTimeout(typeWriter, speed);
+      //   }
+      // }
     });
   }
 }
