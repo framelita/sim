@@ -1,0 +1,49 @@
+// corporate-information styles
+.corporate-information {
+  padding: 70px 0;
+
+  .title {
+    margin-top: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.corporate-information__content {
+  flex: 1 50%;
+
+  &:first-child {
+    padding-right: 20px;
+  }
+
+  &:last-child {
+    padding-left: 20px;
+  }
+}
+
+.corporate-information__address {
+  padding: 15px 0;
+  border-bottom: 2px solid $gold;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  span {
+    display: block;
+  }
+  .title {
+    text-transform: initial;
+    color: $gold;
+    font-size: 1rem;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+}

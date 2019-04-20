@@ -10,6 +10,7 @@
 @import '../_modules/home-banner/home-banner';
 @import '../_modules/about-banner/about-banner';
 @import '../_modules/about-accordion/about-accordion';
+@import '../_modules/corporate-information/corporate-information';
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
@@ -68,6 +69,10 @@ img {
 .bg--gold {
   background: $gold;
   color: #fff;
+}
+
+.bg--light-gold {
+  background: $lightGold;
 }
 
 .pt-50 {
