@@ -10,6 +10,7 @@
 @import '../_modules/home-banner/home-banner';
 @import '../_modules/about-banner/about-banner';
 @import '../_modules/about-accordion/about-accordion';
+@import '../_modules/council-images/council-images';
 @import '../_modules/corporate-information/corporate-information';
 
 // Box sizing partial styles:
@@ -50,6 +51,11 @@ a {
   font-size: 2rem;
 }
 
+.subtitle {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
 .title--gold {
   color: $gold;
 }
@@ -71,8 +77,12 @@ img {
   color: #fff;
 }
 
-.bg--light-gold {
-  background: $lightGold;
+.bg--gold2 {
+  background: $gold2;
+}
+
+.bg--gold3 {
+  background: $gold3;
 }
 
 .pt-50 {
@@ -81,4 +91,13 @@ img {
 
 .pb-50 {
   padding-bottom: 50px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+button {
+  outline: 0;
+  cursor: pointer;
 }

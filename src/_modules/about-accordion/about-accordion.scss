@@ -24,6 +24,7 @@
   font-weight: 300;
   outline: 0;
   cursor: pointer;
+  transition: height 0.15s ease-in-out;
 
   .text {
     display: block;
@@ -36,14 +37,11 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 10px);
-    transition: transform 0.15s ease-in-out;
   }
 
   &:hover,
   &.is-show {
-    .img {
-      transform: translate(-50%, 15px);
-    }
+    height: 140px;
   }
 
   &[data-target="global"] {

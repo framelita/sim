@@ -1,0 +1,19 @@
+mixin council-images(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.data = spec.data || {}
+
+  .council-images(class=spec.__class)&attributes(attributes)
+    each item, index in spec.data
+      .council-images__item(data-index=index)
+        img.council-images__image(src=item.image)
+        p.council-images__title=item.name
+        .council-images__content(data-index=index)
+          button(type="button").js-close-council.council-images__close
+            img(src="../images/close.png")
+            span Close
+          h3.council-images__name=item.name
+          div!=item.content
+          button.council-images__button.js-next-council(type="button")
+            img(src="../images/arrow-right.jpg")
+            span Next
