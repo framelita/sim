@@ -1,0 +1,110 @@
+mixin key-statistic(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  .key-statistic(class=spec.__class)&attributes(attributes)
+    .key-statistic__numbergroup.bg--gold3.pt-20.pb-20
+      .container
+        h2.title.title--gold 2018 Key Statistics
+        .key-statistic__numbers
+          .column
+            span.number 0.3%
+            span.name Growth
+          .column
+            span.number $237.5m
+            span.name Revenue
+    .bg--white.pt-50.pb-20
+      .container
+        .key-statistic__group
+          .key-statistic__item
+            .numbers
+              span.text
+              span.number 35,439
+              span.desc Members
+            .info
+              p <strong>35,063</strong> Individual Members
+              p <strong>376</strong> Corporate Members
+          .key-statistic__item
+            .numbers
+              span.text Over
+              span.number 18,200
+              span.desc Students Enrolled
+            .info
+              p <strong>SIM Global Education</strong> 18,000 students | Over 80 programmes offered
+              p <strong>SIM International Academy</strong> 54 students
+              p <strong>Singapore (Cambodia) International Academy</strong> 149 students
+          .key-statistic__item
+            .numbers
+              span.text Over
+              span.number 10,000
+              span.desc Professionals Trained
+            .info
+              p <strong>540</strong> executive and customised in-company training programmes organised
+          .key-statistic__item
+            .numbers
+              span.text Over
+              span.number 158,000
+              span.desc SIM Global Education Alumni
+            .info
+              p From over <strong>40</strong> countries
+    .bg--white.pb-50
+      .container
+        table.key-statistic__table
+          thead
+            tr
+              th
+              th.thead--transparent(colspan="2") Group<sup>1</sup>
+              th.thead--transparent(colspan="2") Institute<sup>1</sup>
+            tr
+              th
+              th.thead--title 2018<sup>2</sup><br>($'000)
+              th.thead--title 2017<sup>2</sup><br>($'000)
+              th.thead--title 2018<sup>2</sup><br>($'000)
+              th.thead--title 2017<sup>2</sup><br>($'000)
+          tbody
+            tr
+              td Income
+              td 237,461
+              td 236,760
+              td 88,587
+              td 89,712
+            tr
+              td % growth / reduction
+              td 0.3%
+              td
+              td -1.3%
+              td
+            tr
+              td Expenditure
+              td 218,016
+              td 209,946
+              td 76,627
+              td 78,935
+            tr
+              td Excess of income over expenditure
+              td 19,445
+              td 26,814
+              td 11,960
+              td 10,777
+            tr
+              td Capital expenditure
+              td 12,338
+              td 8,336
+              td 3,674
+              td 3,561
+            tr
+              td Reserve Level<sup>3</sup>
+              td 1.1 years
+              td 1.1 years
+              td 2.1 years
+              td 2.0 years
+        .key-statistic__footnote
+          p
+            sup 1
+            span Group comprises Singapore Institute of Management, Singapore Institute of Management Holdings Pte Ltd, Singapore Institute of Management Pte Ltd, Singapore Institute of Management International Pte Ltd (formerly known as SIM International Pte Ltd), SIM Xtension Pte Ltd, Singapore (Cambodia) International Academy Co. Ltd and SIM AEC Pte Ltd. Institute refers to Singapore Institute of Management.
+          p
+            sup 2
+            span For the year ended on 31 December.
+          p
+            sup 3
+            span Computed based on the formula: bank balances / total annual expenditure including capital expenditure. SIM Group will target to maintain a reserve level of one year taking into consideration its future income streams and future operating and capital expenditure.

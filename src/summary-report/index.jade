@@ -3,6 +3,7 @@ extends ../_layouts/base
 include ../_modules/header/header
 include ../_modules/footer/footer
 include ../_modules/summary-banner/summary-banner
+include ../_modules/key-statistic/key-statistic
 
 block config
   //- Correct base url pathing for this page
@@ -12,5 +13,6 @@ block content
   +header({baseUrl})
   main.main
     +summary-banner()
+    +key-statistic()
   +footer()
 
