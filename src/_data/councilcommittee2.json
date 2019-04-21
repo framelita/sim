@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Nomination Committee",
+    "chairman": "Ms Euleen Goh",
+    "member": [
+      "Ms Susan Chong",
+      "Professor Hsieh Tsun-yan"
+    ],
+    "external": []
+  },
+  {
+    "title": "Audit & Risk Committee",
+    "chairman": "Ms Adeline Sum",
+    "member": [
+      "Ms Junie Foo",
+      "Mr Jen Kwong Hwa",
+      "Mr Winston Tan",
+      "Mr George Thia"
+    ],
+    "external": []
+  },
+  {
+    "title": "Finance & Investment Committee",
+    "chairman": "Ms Madeleine Lee",
+    "member": [
+      "Mr Chia Wee Boon",
+      "Ms Euleen Goh",
+      "Mr Tan Choon Seng"
+    ],
+    "external": []
+  },
+  {
+    "title": "Human Capital Committee",
+    "chairman": "Professor Hsieh Tsun-yan",
+    "member": [
+      "Ms Susan Chong",
+      "Mr Patrick Fang",
+      "Ms Euleen Goh"
+    ],
+    "external": []
+  }
+]

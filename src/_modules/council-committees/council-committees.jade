@@ -1,0 +1,22 @@
+mixin council-committees(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.data = spec.data || ''
+
+  .council-committees(class=spec.__class)&attributes(attributes)
+    each item in spec.data
+      .council-committees__item
+        button(type="button").council-committees__title
+          span=item.title
+          img(src="../images/arrow-down.png")
+        .council-committees__content
+          p.title.title--gold Chairman
+          p=item.chairman
+          p.title.title--gold Members
+          each member in item.member
+            p=member
+          if item.external
+            p.title.title--gold External Members
+            each member in item.external
+              p=member
+

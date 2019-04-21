@@ -11,6 +11,7 @@
 @import '../_modules/about-banner/about-banner';
 @import '../_modules/about-accordion/about-accordion';
 @import '../_modules/council-images/council-images';
+@import '../_modules/council-committees/council-committees';
 @import '../_modules/corporate-information/corporate-information';
 
 // Box sizing partial styles:
@@ -60,7 +61,8 @@ a {
   color: $gold;
 }
 
-.title--white {
+.title--white,
+.text--white {
   color: #fff;
 }
 
@@ -100,4 +102,22 @@ img {
 button {
   outline: 0;
   cursor: pointer;
+}
+
+.btn-view-video {
+  background: transparent;
+  border: 0;
+  display: inline-flex;
+  color: #fff;
+  justify-content: center;
+  padding: 0;
+  transition: transform 0.15s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  span {
+    margin-left: 8px;
+  }
 }

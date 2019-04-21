@@ -1,0 +1,49 @@
+[
+  {
+    "title": "Nomination Committee",
+    "chairman": "Mr Tan Soo Jin",
+    "member": [
+      "Ms Junie Foo",
+      "Professor Hsieh Tsun-yan"
+    ],
+    "external": []
+  },
+  {
+    "title": "Audit Committee",
+    "chairman": "Mr George Thia",
+    "member": [
+      "Ms Junie Foo",
+      "Ms Adeline Sum"
+    ],
+    "external": []
+  },
+  {
+    "title": "Finance Committee",
+    "chairman": "Mr Tan Choon Seng",
+    "member": [
+      "Mr Chia Wee Boon",
+      "Ms Susan Chong"
+    ],
+    "external": [
+      "Mr Foo Heng Boon"
+    ]
+  },
+  {
+    "title": "Investment Committee",
+    "chairman": "Mr Jen Kwong Hwa",
+    "member": [
+      "Ms Madeleine Lee",
+      "Mr Winston Tan"
+    ],
+    "external": []
+  },
+  {
+    "title": "Remuneration (Group) Committee",
+    "chairman": "Mr Patrick Fang",
+    "member": [
+      "Ms Junie Foo",
+      "Mr George Thia"
+    ],
+    "external": []
+  }
+]
