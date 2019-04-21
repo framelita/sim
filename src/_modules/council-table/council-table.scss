@@ -1,0 +1,63 @@
+// council-table styles
+.council-table {
+  color: #fff;
+
+  td {
+    width: 20%;
+
+    &:first-child {
+      min-width: 220px;
+    }
+  }
+
+  th,
+  td {
+    text-align: center;
+
+    &:first-child {
+      text-align: left;
+    }
+  }
+
+  th {
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  td {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding: 5px 10px;
+  }
+
+  .thead--title {
+    background: $gold4;
+    color: $gold;
+    border: 2px solid $gold2;
+    border-top-width: 5px;
+  }
+
+  .thead--meeting {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+}
+
+.council-table__footnote {
+  color: #fff;
+  margin: 10px;
+  font-size: 0.875rem;
+
+  span {
+    display: inline-block;
+    vertical-align: top;
+
+    &:first-child {
+      width: 35px;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}

@@ -8,6 +8,7 @@ include ../_modules/organisation-chart/organisation-chart
 include ../_modules/corporate-information/corporate-information
 include ../_modules/council-images/council-images
 include ../_modules/council-committees/council-committees
+include ../_modules/council-table/council-table
 
 block config
   //- Correct base url pathing for this page
@@ -43,5 +44,6 @@ block content
         button(type="button").js-view-video.btn-view-video
           img(src="../images/arrow-right.jpg")
           span View
+        +council-table()
     +corporate-information()
   +footer()
