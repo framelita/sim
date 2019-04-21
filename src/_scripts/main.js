@@ -10,6 +10,7 @@ import HomeBanner from '../_modules/home-banner/home-banner';
 import AboutAccordion from '../_modules/about-accordion/about-accordion';
 import CouncilImages from '../_modules/council-images/council-images';
 import CouncilCommittees from '../_modules/council-committees/council-committees';
+import SummaryBanner from '../_modules/summary-banner/summary-banner';
 
 $(() => {
   new Header();
@@ -17,4 +18,5 @@ $(() => {
   new AboutAccordion();
   new CouncilImages();
   new CouncilCommittees();
+  new SummaryBanner();
 });

@@ -1,0 +1,113 @@
+// summary-banner styles
+.summary-banner__image {
+  padding: 100px 0;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $gold4;
+  background-position: right center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.summary-banner__image2 {
+  padding: 100px 0;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $gold4;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.summary-banner__content {
+  max-width: 400px;
+
+  .name,
+  .title,
+  .company {
+    display: block;
+  }
+
+  .name {
+    font-size: 1.125rem;
+    color: $gold;
+  }
+
+  .jobtitle {
+    font-size: 1rem;
+    color: $gold;
+    font-weight: bold;
+    text-transform: initial;
+  }
+}
+
+.summary-banner__content2 {
+  padding: 30px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .column {
+    width: 300px;
+  }
+
+  .name,
+  .title,
+  .company {
+    display: block;
+  }
+
+  .name {
+    font-size: 1.125rem;
+    color: $gold;
+  }
+
+  .jobtitle {
+    font-size: 1rem;
+    color: $gold;
+    font-weight: bold;
+    text-transform: initial;
+  }
+}
+
+.summary-banner__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: 0.875rem;
+  color: #fff;
+  transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  span {
+    margin-left: 8px;
+  }
+
+  &.is-active {
+    img {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.summary-banner__text {
+  display: none;
+
+  .title {
+    font-weight: 300;
+    font-size: 1.25rem;
+    text-transform: initial;
+  }
+}

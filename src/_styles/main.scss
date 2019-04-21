@@ -13,6 +13,7 @@
 @import '../_modules/council-images/council-images';
 @import '../_modules/council-committees/council-committees';
 @import '../_modules/council-table/council-table';
+@import '../_modules/summary-banner/summary-banner';
 @import '../_modules/corporate-information/corporate-information';
 
 // Box sizing partial styles:
@@ -94,6 +95,14 @@ img {
 
 .pb-50 {
   padding-bottom: 50px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
 }
 
 .mb-5 {
