@@ -2,7 +2,7 @@ mixin about-banner(spec)
   - spec = spec || {}
   - spec.__class = spec.__class || ''
 
-  .about-banner(class=spec.__class)&attributes(attributes)
+  #who-we-are.about-banner(class=spec.__class)&attributes(attributes)
     .container
       h1.title.about-banner__title Who We Are
       .about-banner__content

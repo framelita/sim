@@ -20,7 +20,7 @@ block content
     +about-banner()
     +about-accordion()
     +organisation-chart()
-    .corporate-governance.bg--gold.pt-50.pb-50
+    #corporate-governance.corporate-governance.bg--gold.pt-50.pb-50
       .container
         h2.title.title--white Corporate Governance
         p As a not-for-profit organisation under the purview of the Charities Act, SIM enforces stringent corporate governance guidelines to ensure that we are transparent and are compliant with legal regulatory requirements.
@@ -29,21 +29,23 @@ block content
         p The Internal Audit Division, as part of the SIM Group's corporate governance framework, supports the Governing Council to oversee the SIM Group’s functions in whistle-blowing, internal and external audits.
         p As part of good corporate governance, SIM has in place the Whistle-Blowing Policy and Conflict of Interest best practices. Under the latter, Council members or staff who have personal interests in business transactions or contracts that SIM may enter into or have vested interest in any organisation that SIM has dealings with, are required to declare such conflicts of interest to the Council or senior management immediately, and to abstain from any discussion or decision making on the matter of interest.
         p The Whistle-Blowing Policy extends the notion of corporate governance to all staff and vendors, allowing them to take responsibility in playing their part to help SIM achieve a greater level of public confidence in our corporate governance.
-    .bg--gold2.pt-50.pb-50
+    #sim-governing-council.bg--gold2.pt-50.pb-50
       .container
         h2.title.title--white SIM Governing Council
         +council-images({data: site.data.councilgoverning})
         h3.subtitle.title--white.mb-5 Honorary Chairman
         p Dr Richard K M Eu
-        h2.title.title--white SIM Governing Council Committees
-        p.subtitle.text--white Until 16 May
-        +council-committees({data: site.data.councilcommittee})
-        p.subtitle.text--white From 16 May
-        +council-committees({data: site.data.councilcommittee2})
-        p.subtitle.text--white SIM Governing Council Meeting Attendance
-        button(type="button").js-view-video.btn-view-video
-          img(src="../images/arrow-right.jpg")
-          span View
+        #sim-holdings-bod
+          h2.title.title--white SIM Governing Council Committees
+          p.subtitle.text--white Until 16 May
+          +council-committees({data: site.data.councilcommittee})
+          p.subtitle.text--white From 16 May
+          +council-committees({data: site.data.councilcommittee2})
+        #sim-aec-bod
+          p.subtitle.text--white SIM Governing Council Meeting Attendance
+          button(type="button").js-view-video.btn-view-video
+            img(src="../images/arrow-right.jpg")
+            span View
         +council-table()
     +corporate-information()
   +footer()

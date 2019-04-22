@@ -5,14 +5,14 @@ mixin header(spec)
 
   header.header(class=spec.__class)&attributes(attributes)
     .container
-      a.header__logo(href="#")
+      a.header__logo(href=spec.baseUrl)
         img(src="#{spec.baseUrl}images/logo.jpg")
       ul.header__navigation
         each item in site.data.navigation
           li.header__item
-            a.header__link(href=item.link)=item.text
+            a.header__link(href=spec.baseUrl+item.link)=item.text
             if item.menu
               ul.header__dropdown
                 each child in item.menu
                   li.child__item
-                    a.child__link(href=child.link)=child.text
+                    a.child__link(href=spec.baseUrl+child.link)=child.text

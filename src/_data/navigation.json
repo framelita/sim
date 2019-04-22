@@ -1,57 +1,57 @@
 [
   {
     "text": "About SIM",
-    "link": "#",
+    "link": "about-sim",
     "menu": [
       {
         "text": "Who We Are",
-        "link": "#"
+        "link": "about-sim#who-we-are"
       },
       {
         "text": "Organisation Chart",
-        "link": "#"
+        "link": "about-sim#organisation-chart"
       },
       {
         "text": "Corporate Governance",
-        "link": "#"
+        "link": "about-sim#corporate-governance"
       },
       {
         "text": "SIM Governing Council",
-        "link": "#"
+        "link": "about-sim#sim-governing-council"
       },
       {
         "text": "Singapore Institute of Management Holdings Pte Ltd Board of Directors",
-        "link": "#"
+        "link": "about-sim#sim-holdings-bod"
       },
       {
         "text": "SIM AEC Pte Ltd Board of Directors",
-        "link": "#"
+        "link": "about-sim#sim-aec-bod"
       },
       {
         "text": "Corporate Information",
-        "link": "#"
+        "link": "about-sim#corporate-information"
       }
     ]
   },
   {
     "text": "Summary Report",
-    "link": "#",
+    "link": "summary-report",
     "menu": [
       {
         "text": "Chairman's Message",
-        "link": "#"
+        "link": "summary-report#chairmans-message"
       },
       {
         "text": "Management Report",
-        "link": "#"
+        "link": "summary-report#management-report"
       },
       {
         "text": "2018 Key Statistics",
-        "link": "#"
+        "link": "summary-report#key-statistics"
       },
       {
         "text": "2018 at a Glance",
-        "link": "#"
+        "link": "summary-report#at-a-glance"
       }
     ]
   },
