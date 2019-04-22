@@ -18,8 +18,15 @@ export default class Header {
       let $this = $(this),
         href = $this.attr('href'),
         hashtag = href.split('#').pop();
-      console.log(hashtag, href, window.location.pathname, href.indexOf(window.location.pathname.split('/')[1]));
-      if (href.indexOf(window.location.pathname.split('/')[1]) >= 0) {
+
+      let lastPath = window.location.pathname.split('/').slice(-1)[0];
+
+      if (lastPath == '') {
+        lastPath = window.location.pathname.split('/').slice(-2)[0];
+      }
+
+      console.log(hashtag, href, window.location.pathname, href.indexOf(lastPath));
+      if (lastPath != '' &&  href.indexOf(lastPath) >= 0) {
         //if url is for current page
         let scrollTop = $(`#${hashtag}`).offset().top - $('.header').outerHeight();
         $('html, body').animate({
