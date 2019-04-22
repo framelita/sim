@@ -1,0 +1,119 @@
+// 2018-glance styles
+.glance {
+  padding: 30px 0;
+  background: $gold3;
+
+  .title {
+    margin-top: 0;
+  }
+}
+
+.glance__title {
+  color: $gold;
+  margin: 0;
+  height: 30px;
+  display: block;
+
+  &.glance__title--empty {
+    width: 40px;
+    background: $gold3;
+    margin-left: -20px;
+  }
+}
+
+.glance__list {
+  height: 350px;
+
+  .slick-arrow {
+    width: 20px;
+    border: 0;
+    background: $gold;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    top: 0;
+    text-indent: 999px;
+    overflow: hidden;
+    transition: opacity 0.15s ease-in-out;
+
+    &.slick-disabled {
+      cursor: auto;
+      background: $gold4;
+    }
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      position: absolute;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &.slick-prev {
+      left: 0;
+      &::after {
+        left: 5px;
+        border-right: 8px solid #fff;
+      }
+    }
+
+    &.slick-next {
+      right: 0;
+      &::after {
+        right: 5px;
+        border-left: 8px solid #fff;
+      }
+    }
+  }
+
+  .slick-list {
+    padding: 0 30px;
+  }
+
+  .slick-list,
+  .slick-track,
+  .slick-slide > div {
+    height: 100%;
+  }
+}
+
+.glance__item {
+  vertical-align: top;
+  padding: 0 10px;
+  border-left: 2px solid $gold;
+  position: relative;
+  height: 100%;
+  font-size: 0.875rem;
+  white-space: normal;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 20px);
+    background: $gold;
+    height: 8px;
+  }
+}
+
+.glance__image {
+  margin-top: auto;
+  width: 100%;
+}
+
+.glance__text {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 30px);
+  padding-bottom: 8px;
+}

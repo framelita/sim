@@ -11,6 +11,7 @@ import AboutAccordion from '../_modules/about-accordion/about-accordion';
 import CouncilImages from '../_modules/council-images/council-images';
 import CouncilCommittees from '../_modules/council-committees/council-committees';
 import SummaryBanner from '../_modules/summary-banner/summary-banner';
+import Glance from '../_modules/2018-glance/2018-glance';
 
 $(() => {
   new Header();
@@ -19,4 +20,5 @@ $(() => {
   new CouncilImages();
   new CouncilCommittees();
   new SummaryBanner();
+  new Glance();
 });

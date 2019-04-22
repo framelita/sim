@@ -4,6 +4,7 @@ include ../_modules/header/header
 include ../_modules/footer/footer
 include ../_modules/summary-banner/summary-banner
 include ../_modules/key-statistic/key-statistic
+include ../_modules/2018-glance/2018-glance
 
 block config
   //- Correct base url pathing for this page
@@ -14,5 +15,6 @@ block content
   main.main
     +summary-banner()
     +key-statistic()
+    +2018-glance()
   +footer()
 
