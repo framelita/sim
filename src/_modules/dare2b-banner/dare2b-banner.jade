@@ -1,0 +1,14 @@
+mixin dare2b-banner(spec)
+  - spec = spec || {}
+  - spec.bannerclass = spec.bannerclass || ''
+  - spec.title = spec.title || ''
+  - spec.text = spec.text || ''
+
+  .dare2b-banner(class=spec.bannerclass style="background-color:#{spec.color};")&attributes(attributes)
+    .dare2b-banner__image(style="background-image:url(../#{spec.image});")
+    .container
+      .dare2b-banner__content
+        h1.dare2b-banner__title
+          span.hashtag #
+          span.text!=spec.title
+        p.dare2b-banner__text=spec.text

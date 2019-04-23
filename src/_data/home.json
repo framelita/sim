@@ -11,14 +11,16 @@
     "text": "We see in all learners who come through our doors the potential to be the best they can be in whatever track they choose, whether for their learning or careers. Our range of certificated and continuing education and training programmes are curated to serve changing market needs. They equip our learners with up-to-date market-relevant knowledge and skills so that they are optimised to perform at their peak, and to take on challenges and opportunities at every stage of their career.",
     "image": "./images/home-banner-2.jpg",
     "video": "#",
-    "color": "#2d1b21"
+    "color": "#2d1b21",
+    "bannerclass": "dare2b-banner--optimised"
   },
   {
     "title": "dare2b<strong>EXCEPTIONAL</strong>",
     "text": "Success takes more than technical competence. Good grades may open doors but it is soft skills that give the edge and transferable value. With a plethora of extracurricular activities, personal and career development programmes, we encourage our students to seize every opportunity to develop a strong work ethic and exceptional qualities such as leadership, critical  thinking, communications, teamwork, flexibility and grit that will help them stand out and ace.",
     "image": "./images/home-banner-3.jpg",
     "video": "#",
-    "color": "#06110a"
+    "color": "#06110a",
+    "bannerclass": "dare2b-banner--exceptional"
   },
   {
     "title": "dare2b<strong>CHALLENGED</strong>",
@@ -26,13 +28,15 @@
     "image": "./images/home-banner-4.jpg",
     "__class": "is-reversed",
     "video": "#",
-    "color": "#151e29"
+    "color": "#151e29",
+    "bannerclass": "dare2b-banner--challenged"
   },
   {
     "title": "dare2b<strong>COUNTED</strong>",
     "text": "Often it’s not just what we know but who we know that matters. At the heart of our inclusive network of learners are our members, students, alumni, partners, trainers, lecturers and staff. What gives this community vibrancy and value is the fact that everyone’s voice counts. We encourage every beneficiary of this community to add to its richness by staying connected, sharing ideas, giving feedback and making a difference.",
     "image": "./images/home-banner-5.jpg",
     "video": "#",
-    "color": "#170500"
+    "color": "#170500",
+    "bannerclass": "dare2b-banner--counted"
   }
 ]

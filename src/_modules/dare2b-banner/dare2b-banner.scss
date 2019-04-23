@@ -1,0 +1,82 @@
+// dare2b-banner styles
+.dare2b-banner {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 40px solid #fff;
+
+  &--optimised {
+    border-bottom-color: #b37e62;
+  }
+
+  &--exceptional {
+    border-bottom-color: #ffb100;
+  }
+
+  &--challenged {
+    border-bottom-color: #73cfff;
+  }
+
+  &--counted {
+    border-bottom-color: #bfe333;
+  }
+}
+
+.dare2b-banner__title {
+  font-weight: 400;
+  border: 4px solid #fff;
+  background: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 8px;
+  font-size: 2rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+
+  .hashtag {
+    display: inline-block;
+    color: #000;
+    background: #fff;
+    padding: 5px 8px 5px 3px;
+  }
+
+  .text {
+    padding: 5px 10px;
+    display: inline-block;
+
+    &.is-show {
+      opacity: 1;
+    }
+  }
+}
+
+.dare2b-banner__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: auto 100%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.dare2b-banner__content {
+  color: #fff;
+  width: 50%;
+  line-height: 1.4;
+  position: relative;
+  z-index: 2;
+}
+
+.dare2b-banner__text {
+  max-width: 400px;
+}
+
+.dare2b-banner__video {
+  transition: opacity 0.25s ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
+}
