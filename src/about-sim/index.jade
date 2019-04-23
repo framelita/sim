@@ -42,5 +42,26 @@ block content
         +council-committees({data: site.data.councilcommittee2})
         p.subtitle.text--white SIM Governing Council Meeting Attendance
         +council-table()
+    #sim-holdings-bod.bg--gold3.pt-50.pb-50
+      .container
+        h2.title.title--gold Singapore Institute of Management Holdings Pte Ltd Board of Directors
+        +council-images({data: site.data.simholdings})
+        h2.title.title--gold SINGAPORE INSTITUTE OF MANAGEMENT HOLDINGS PTE LTD BOARD COMMITTEE
+        p.subtitle Until 11 Jan 2018
+        +council-committees({data: [
+          {
+            "title": "Human Resources Committee",
+            "chairman": "Mr Tan Soo Jin  ",
+            "member": [
+              "Mr Patrick Fang",
+              "Mr Ong Boon Hwee "
+            ],
+            "external": []
+          },
+        ]})
+    #sim-holdings-bod.bg--white.pt-50.pb-50
+      .container
+        h2.title.title--gold SIM AEC Pte Ltd Board of Directors
+        +council-images({data: site.data.simaec})
     +corporate-information()
   +footer()
