@@ -21,7 +21,7 @@ export default class CouncilCommittees {
       let $this = $(this),
         $parent = $this.closest('.council-committees__item');
 
-      $parent.find('.council-committees__title').removeClass('is-active');
+      $parent.removeClass('is-active');
       $parent.find('.council-committees__content').slideUp();
     });
   }

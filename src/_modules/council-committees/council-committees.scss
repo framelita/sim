@@ -39,7 +39,6 @@
 .council-committees__content {
   padding: 10px;
   font-size: 0.875rem;
-  padding-bottom: 20px;
   display: none;
   background: $gold4;
   height: calc(100% - 80px);
@@ -55,4 +54,9 @@
   p {
     margin: 0;
   }
+}
+
+.council-committees__close {
+  margin-top: 10px;
+  margin-left: -10px;
 }
