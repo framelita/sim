@@ -51,5 +51,14 @@ export default class CouncilImages {
 
       $(`.council-images__item[data-index="${index}"] .council-images__image`).trigger('click');
     });
+
+    $('.js-close-council').on('click', function() {
+      let previousIndex = $('.council-images__item.is-active').data('index');
+
+      $('.council-images__item').removeClass('is-active');
+      $(`.council-images__content[data-index="${previousIndex}"]`).slideUp(400, function() {
+        $(this).appendTo(`.council-images__item[data-index="${previousIndex}"]`);
+      })
+    });
   }
 }

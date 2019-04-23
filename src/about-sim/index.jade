@@ -35,17 +35,12 @@ block content
         +council-images({data: site.data.councilgoverning})
         h3.subtitle.title--white.mb-5 Honorary Chairman
         p Dr Richard K M Eu
-        #sim-holdings-bod
-          h2.title.title--white SIM Governing Council Committees
-          p.subtitle.text--white Until 16 May
-          +council-committees({data: site.data.councilcommittee})
-          p.subtitle.text--white From 16 May
-          +council-committees({data: site.data.councilcommittee2})
-        #sim-aec-bod
-          p.subtitle.text--white SIM Governing Council Meeting Attendance
-          button(type="button").js-view-video.btn-view-video
-            img(src="../images/arrow-right.jpg")
-            span View
+        h2.title.title--white SIM Governing Council Committees
+        p.subtitle.text--white Until 16 May
+        +council-committees({data: site.data.councilcommittee})
+        p.subtitle.text--white From 16 May
+        +council-committees({data: site.data.councilcommittee2})
+        p.subtitle.text--white SIM Governing Council Meeting Attendance
         +council-table()
     +corporate-information()
   +footer()

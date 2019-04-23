@@ -2,32 +2,36 @@ mixin council-table(spec)
   - spec = spec || {}
   - spec.__class = spec.__class || ''
 
-  table.council-table(class=spec.__class border="0" cellpadding="0" cellspacing="0")&attributes(attributes)
-    thead
-      tr
-        th(colspan="2")
-        th.thead--meeting(colspan="3") Meeting Attendance
-      tr
-        th.thead--title Name
-        th.thead--title Date of Appointment to SIM Governing Council**
-        th.thead--title SIM Governing Council Meetings*
-        th.thead--title SIM Governing Council Committee Meetings
-        th.thead--title Total
-    tbody
-      each item in site.data.counciltable
+  button(type="button").js-toggle-council-table.btn-toggle-council-table
+    img(src="../images/arrow-right.jpg")
+    span View
+  .council-table__container
+    table.council-table(class=spec.__class border="0" cellpadding="0" cellspacing="0")&attributes(attributes)
+      thead
         tr
-          td=item.name
-          td=item.date
-          td=item.council
-          td=item.committee
-          td=item.total
-  .council-table__footnote
-    p
-      span.asterisk *
-      span Five SIM Governing Council meetings were held in FY2018.
-    p
-      span.asterisk **
-      span No SIM Governing Council member was remunerated for his/her service to the Council.
-    p
-      span.asterisk ***
-      span There was one paid staff member, who received remuneration exceeding $50,000 during the financial year, who is a close family member of Mr Tan Soo Jin.
+          th(colspan="2")
+          th.thead--meeting(colspan="3") Meeting Attendance
+        tr
+          th.thead--title Name
+          th.thead--title Date of Appointment to SIM Governing Council**
+          th.thead--title SIM Governing Council Meetings*
+          th.thead--title SIM Governing Council Committee Meetings
+          th.thead--title Total
+      tbody
+        each item in site.data.counciltable
+          tr
+            td=item.name
+            td=item.date
+            td=item.council
+            td=item.committee
+            td=item.total
+    .council-table__footnote
+      p
+        span.asterisk *
+        span Five SIM Governing Council meetings were held in FY2018.
+      p
+        span.asterisk **
+        span No SIM Governing Council member was remunerated for his/her service to the Council.
+      p
+        span.asterisk ***
+        span There was one paid staff member, who received remuneration exceeding $50,000 during the financial year, who is a close family member of Mr Tan Soo Jin.

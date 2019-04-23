@@ -120,21 +120,3 @@ button {
   outline: 0;
   cursor: pointer;
 }
-
-.btn-view-video {
-  background: transparent;
-  border: 0;
-  display: inline-flex;
-  color: #fff;
-  justify-content: center;
-  padding: 0;
-  transition: transform 0.15s ease-in-out;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  span {
-    margin-left: 8px;
-  }
-}

@@ -1,4 +1,8 @@
 // council-table styles
+.council-table__container {
+  display: none;
+}
+
 .council-table {
   color: #fff;
 
@@ -48,9 +52,14 @@
   margin: 10px;
   font-size: 0.875rem;
 
+  p {
+    color: #fff;
+  }
+
   span {
     display: inline-block;
     vertical-align: top;
+    max-width: calc(100% - 40px);
 
     &:first-child {
       width: 35px;
@@ -59,5 +68,29 @@
 
   p {
     margin: 0;
+  }
+}
+
+.btn-toggle-council-table {
+  background: transparent;
+  border: 0;
+  display: inline-flex;
+  color: #fff;
+  justify-content: center;
+  padding: 0;
+  transition: transform 0.15s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  span {
+    margin-left: 8px;
+  }
+
+  &.is-active {
+    img {
+      transform: rotate(90deg);
+    }
   }
 }
