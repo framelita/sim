@@ -9,7 +9,7 @@ mixin council-images(spec)
         img.council-images__image(src=item.image)
         p.council-images__title=item.name
         .council-images__content(data-index=index)
-          button(type="button").js-close-council.council-images__close
+          button(type="button").js-close-council.council-images__close.btn-close
             img(src="../images/close.png")
             span Close
           h3.council-images__name=item.name

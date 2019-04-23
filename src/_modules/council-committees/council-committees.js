@@ -16,5 +16,13 @@ export default class CouncilCommittees {
         $parent.find('.council-committees__content').slideDown();
       }
     });
+
+    $('.js-close-committees').on('click', function() {
+      let $this = $(this),
+        $parent = $this.closest('.council-committees__item');
+
+      $parent.find('.council-committees__title').removeClass('is-active');
+      $parent.find('.council-committees__content').slideUp();
+    });
   }
 }

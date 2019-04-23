@@ -19,4 +19,7 @@ mixin council-committees(spec)
             p.title.title--gold External Members
             each member in item.external
               p=member
+          button(type="button").js-close-committees.council-committees__close.btn-close
+            img(src="../images/close.png")
+            span Close
 

@@ -120,3 +120,21 @@ button {
   outline: 0;
   cursor: pointer;
 }
+
+.btn-close {
+  display: block;
+  color: $gold;
+  background: transparent;
+  text-align: center;
+  border: 0;
+  font-size: 0.75rem;
+
+  img,
+  span {
+    display: block;
+  }
+
+  img {
+    margin: 0 auto 5px;
+  }
+}

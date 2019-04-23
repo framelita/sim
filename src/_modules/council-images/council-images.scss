@@ -33,6 +33,10 @@
   margin: 15px 5px;
   position: relative;
 
+  .bg--gold3 & {
+    background: #fff;
+  }
+
   strong {
     font-weight: bold;
     color: $gold;
@@ -65,19 +69,4 @@
   position: absolute;
   top: 15px;
   right: 10px;
-  display: block;
-  color: $gold;
-  background: transparent;
-  text-align: center;
-  border: 0;
-  font-size: 0.875rem;
-
-  img,
-  span {
-    display: block;
-  }
-
-  img {
-    margin: 0 auto 5px;
-  }
 }
