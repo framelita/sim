@@ -3,7 +3,7 @@ mixin summary-banner(spec)
   - spec.__class = spec.__class || ''
 
   .summary-banner#chairmans-message
-    .summary-banner__image(style="background-image:url(../images/chairman-msg.jpg)")
+    .summary-banner__image
       .container
         .summary-banner__content
           h2.title.title--gold Chairman's Message
@@ -11,6 +11,7 @@ mixin summary-banner(spec)
           span.name Ms Euleen Goh
           span.jobtitle Chairman
           span.company SIM Governing Council
+        img.summary-banner__content-image(src="../images/chairman.png")
     .summary-banner__section.bg--gold.pt-20.pb-20
       .container
         button(type="button").summary-banner__button.js-summary-toggle
@@ -35,8 +36,14 @@ mixin summary-banner(spec)
           p As we forge ahead together to take on the future with renewed passion, focus and energy, I look forward to your continued support. Change we must, but together we will dare to be more.
 
   .summary-banner#management-report
-    .summary-banner__image2(style="background-image:url(../images/management-report.jpg)")
-    .summary-banner__content2
+    .summary-banner__image
+      .container
+        .summary-banner__image-column
+          .column
+            img.summary-banner__content-image(src="../images/ceo.png")
+          .column
+            img.summary-banner__content-image(src="../images/ed.png")
+    .summary-banner__content
       .container
           .column
             span.name Dr Lee Kwok Cheong

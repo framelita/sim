@@ -24,6 +24,12 @@
 .glance__list {
   height: 350px;
 
+  .slick-slide {
+    padding: 8px 0;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+  }
+
   .slick-arrow {
     width: 20px;
     border: 0;
@@ -36,7 +42,7 @@
     top: 0;
     text-indent: 999px;
     overflow: hidden;
-    transition: opacity 0.15s ease-in-out;
+    transition: background 0.15s ease-in-out;
 
     &.slick-disabled {
       cursor: auto;
@@ -53,7 +59,7 @@
     }
 
     &:hover {
-      opacity: 0.9;
+      background: $goldHover;
     }
 
     &.slick-prev {

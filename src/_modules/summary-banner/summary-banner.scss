@@ -1,26 +1,17 @@
 // summary-banner styles
 .summary-banner__image {
   padding: 100px 0;
-  min-height: 500px;
+  height: 500px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $gold4;
-  background-position: right center;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-}
-
-.summary-banner__image2 {
-  padding: 100px 0;
-  min-height: 500px;
-  display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   background-color: $gold4;
   background-position: center center;
-  background-size: contain;
+  background-size: auto 100%;
   background-repeat: no-repeat;
+  background-image: url('../images/bg-management.jpg');
+  overflow: hidden;
 }
 
 .summary-banner__content {
@@ -45,34 +36,49 @@
   }
 }
 
-.summary-banner__content2 {
-  padding: 30px 0;
+.summary-banner__content-image {
+  position: absolute;
+  right: 50%;
+  top: 0;
+  transform: translateX(100%);
+}
 
+#management-report {
   .container {
-    display: flex;
-    justify-content: space-evenly;
+    max-width: 700px;
+  }
+
+  .summary-banner__image {
+    height: 400px;
+  }
+
+  .summary-banner__image .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  .summary-banner__content-image{
+    left: 0;
+    transform: none;
+  }
+
+  .summary-banner__content {
+    max-width: none;
+    padding: 30px 0;
+
+    .column {
+      padding: 0 20px;
+    }
   }
 
   .column {
-    width: 300px;
-  }
-
-  .name,
-  .title,
-  .company {
-    display: block;
-  }
-
-  .name {
-    font-size: 1.125rem;
-    color: $gold;
-  }
-
-  .jobtitle {
-    font-size: 1rem;
-    color: $gold;
-    font-weight: bold;
-    text-transform: initial;
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 100%;
   }
 }
 
