@@ -2,10 +2,10 @@ mixin council-table(spec)
   - spec = spec || {}
   - spec.__class = spec.__class || ''
 
-  button(type="button").js-toggle-council-table.btn-toggle-council-table
-    img(src="../images/arrow-right.jpg")
+  button(type="button").btn-toggle.js-toggle.t--white
+    img(src="../images/arrow-down.png")
     span View
-  .council-table__container
+  .council-table__container.toggle-container
     table.council-table(class=spec.__class border="0" cellpadding="0" cellspacing="0")&attributes(attributes)
       thead
         tr

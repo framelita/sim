@@ -12,7 +12,6 @@ import AboutAccordion from '../_modules/about-accordion/about-accordion';
 import CouncilImages from '../_modules/council-images/council-images';
 import CouncilCommittees from '../_modules/council-committees/council-committees';
 import SummaryBanner from '../_modules/summary-banner/summary-banner';
-import CouncilTable from '../_modules/council-table/council-table';
 import Glance from '../_modules/2018-glance/2018-glance';
 
 $(() => {
@@ -23,8 +22,26 @@ $(() => {
   new CouncilImages();
   new CouncilCommittees();
   new SummaryBanner();
-  new CouncilTable();
   new Glance();
+
+  $('.js-toggle').on('click', function() {
+    let $this = $(this),
+      $content = $this.next('.toggle-container');
+
+    if ($this.hasClass('is-active')) {
+      $this.removeClass('is-active');
+      $content.slideUp();
+    } else {
+      $this.addClass('is-active');
+      $content.slideDown();
+    }
+  });
+
+  $('.js-close-toggle').on('click', function() {
+    let $this = $(this);
+
+    $this.closest('.toggle-container').slideUp();
+  });
 
   function debounce(func, wait, immediate) {
     var timeout;

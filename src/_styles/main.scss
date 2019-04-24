@@ -70,7 +70,8 @@ a {
 }
 
 .title--white,
-.text--white {
+.text--white,
+.t--white {
   color: #fff;
 }
 
@@ -189,6 +190,75 @@ button {
     figcaption {
       background: $simGreen;
       color: #fff;
+    }
+  }
+}
+
+.btn-toggle {
+  background: transparent;
+  border: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  transition: transform 0.15s ease-in-out;
+  font-size: 0.875rem;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  span {
+    margin-left: 8px;
+  }
+
+  img {
+    transform: rotate(-90deg);
+    background: $gold;
+  }
+
+  &.is-active {
+    img {
+      transform: rotate(0);
+    }
+  }
+
+  &.btn-toggle-green {
+    img {
+      background: $simGreen;
+    }
+  }
+}
+
+.toggle-container {
+  display: none;
+
+  .btn-close {
+    padding: 0;
+    margin-top: 10px;
+  }
+}
+
+.programmes-list {
+  margin: 10px 0;
+  padding: 20px;
+  border-top: 5px solid $simGreen;
+  border-bottom: 5px solid $simGreen;
+  line-height: 1.6;
+
+  p {
+    margin: 0;
+    color: $simGreen;
+    font-weight: bold;
+  }
+
+  ul {
+    margin: 0 0 15px;
+    padding-left: 20px;
+    font-size: 0.875rem;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
