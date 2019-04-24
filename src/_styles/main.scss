@@ -1,4 +1,6 @@
 // Normalize Styles
+$gutter-width: 2rem;
+
 @import 'node_modules/normalize.css/normalize';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Open+Sans:300,400,400i,700,700i');
 @import 'node_modules/slick-carousel/slick/slick.scss';
@@ -58,6 +60,8 @@ a {
   font-weight: 300;
   text-transform: uppercase;
   font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 5px;
 }
 
 .subtitle {
@@ -77,6 +81,22 @@ a {
 
 .t--green {
   color: $simGreen;
+}
+
+.t--lavender {
+  color: $simLavender;
+}
+
+.t--orange {
+  color: $simOrange;
+}
+
+.t--blue {
+  color: $simBlue;
+}
+
+.t--purple {
+  color: $simPurple;
 }
 
 button {
@@ -112,16 +132,16 @@ img {
   background: #e5f1f8;
 }
 
-.bg--darkblue {
-  background: #e7ebf4;
-}
-
 .bg--green {
   background: #e6f1ee;
 }
 
-.bg--purple {
+.bg--lavender {
   background: #eeeef3;
+}
+
+.bg--purple {
+  background: #e7ebf4;
 }
 
 .pt-50 {
@@ -174,7 +194,11 @@ button {
 
 .figure {
   width: 100%;
-  margin: 0;
+  margin: 1em 0 0;
+
+  & + .figure {
+    margin-top: 0;
+  }
 
   img {
     width: 100%;
@@ -189,6 +213,34 @@ button {
   &--green {
     figcaption {
       background: $simGreen;
+      color: #fff;
+    }
+  }
+
+  &--lavender {
+    figcaption {
+      background: $simLavender;
+      color: #fff;
+    }
+  }
+
+  &--orange {
+    figcaption {
+      background: $simOrange;
+      color: #fff;
+    }
+  }
+
+  &--blue {
+    figcaption {
+      background: $simBlue;
+      color: #fff;
+    }
+  }
+
+  &--purple {
+    figcaption {
+      background: $simPurple;
       color: #fff;
     }
   }
