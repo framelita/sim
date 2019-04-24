@@ -168,6 +168,10 @@ img {
   margin-bottom: 5px;
 }
 
+.mt-0 {
+  margin-top: 0;
+}
+
 button {
   outline: 0;
   cursor: pointer;
@@ -336,5 +340,30 @@ button {
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+.column-2 {
+  column-count: 2;
+  column-gap: 2rem;
+  margin: 1.5em 0 2em;
+
+  *:first-child {
+    margin-top: 0;
+  }
+}
+
+.col-sm-6 {
+  *:first-child {
+    margin-top: 0;
+  }
+}
+
+.sim-logo {
+  margin-bottom: 20px;
+
+  & + .title {
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 }
