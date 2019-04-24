@@ -4,7 +4,7 @@
     "text": "Change is relentless and exponentially disruptive. Fiddling at the fringe or continuing to do more of the same, even with our best, is a guarantee for extinction. Nothing less than the exceptional is needed to keep us relevant and thriving. At SIM, we are continually challenging our learners – and ourselves – to move from the ordinary to extraordinary. We empower them with  the right knowledge, skills and perspectives to go beyond their own limits, to be more and do more so that they can keep ahead of the curve. Internally, we are also fostering changes to help us deliver on our promise to make a real difference.",
     "image": "./images/home-banner-1.jpg",
     "id": "dare2bmore",
-    "video": "#",
+    "link": "",
     "color": "#171006"
   },
   {
@@ -12,7 +12,7 @@
     "text": "We see in all learners who come through our doors the potential to be the best they can be in whatever track they choose, whether for their learning or careers. Our range of certificated and continuing education and training programmes are curated to optimise learning and equip our learners with up-to-date market-relevant knowledge and skills so that they can perform at their peak and take on challenges and opportunities at every stage of their career.",
     "image": "./images/home-banner-2.jpg",
     "id": "dare2boptimised",
-    "video": "#",
+    "link": "dare2boptimised",
     "color": "#2d1b21",
     "bannerclass": "dare2b-banner--optimised"
   },
@@ -21,7 +21,7 @@
     "text": "Success takes more than technical competence. Good grades may open doors but it is soft skills that help our students stand out. With a plethora of extracurricular activities, personal and career development programmes, we encourage our students to seize every opportunity to develop a strong work ethic and exceptional qualities in leadership, critical  thinking, communications, teamwork, and adaptability that will help them ace in their careers and lives. ",
     "image": "./images/home-banner-3.jpg",
     "id": "dare2bexceptional",
-    "video": "#",
+    "link": "dare2bexceptional",
     "color": "#06110a",
     "bannerclass": "dare2b-banner--exceptional"
   },
@@ -31,7 +31,7 @@
     "image": "./images/home-banner-4.jpg",
     "id": "dare2bchallenged",
     "__class": "is-reversed",
-    "video": "#",
+    "link": "dare2bchallenged",
     "color": "#151e29",
     "bannerclass": "dare2b-banner--challenged"
   },
@@ -40,7 +40,7 @@
     "text": "Often it’s not just what we know but who we know that matters. At the heart of our inclusive network of learners are our members, students, alumni, partners, trainers, lecturers and staff. What gives this community vibrancy and value is the fact that everyone’s voice counts. The community is further enriched when members stay connected, give feedback and share and build on ideas to make a difference.",
     "image": "./images/home-banner-5.jpg",
     "id": "dare2bcounted",
-    "video": "#",
+    "link": "dare2bcounted",
     "color": "#170500",
     "bannerclass": "dare2b-banner--counted"
   }

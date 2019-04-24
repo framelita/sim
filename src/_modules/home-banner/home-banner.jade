@@ -4,8 +4,7 @@ mixin home-banner(spec)
   - spec.id = spec.id || ''
   - spec.title = spec.title || ''
   - spec.text = spec.text || ''
-  - spec.link = spec.link || '#'
-  - spec.video = spec.video || ''
+  - spec.link = spec.link || ''
   - spec.image = spec.image || 'http://placehold.it/1500x500'
   - spec.color = spec.color || '#000'
 
@@ -16,6 +15,6 @@ mixin home-banner(spec)
           span.hashtag #
           span.text!=spec.title
         p.home-banner__text=spec.text
-        if spec.video
-          a.home-banner__video(href="spec.video")
+        if spec.link
+          a.home-banner__video(href='./' + spec.link)
             img(src="./images/video.jpg")
