@@ -9,7 +9,7 @@ mixin home-banner(spec)
   - spec.image = spec.image || 'http://placehold.it/1500x500'
   - spec.color = spec.color || '#000'
 
-  .home-banner(id=spec.id class=spec.__class style="background-image:url(#{spec.image}); background-color:#{spec.color};")&attributes(attributes)
+  section.home-banner(id=spec.id class=spec.__class style="background-image:url(#{spec.image}); background-color:#{spec.color};")&attributes(attributes)
     .container
       .home-banner__content
         h1.home-banner__title

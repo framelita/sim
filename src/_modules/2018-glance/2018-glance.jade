@@ -2,7 +2,7 @@ mixin 2018-glance(spec)
   - spec = spec || {}
   - spec.__class = spec.__class || ''
 
-  .glance#at-a-glance(class=spec.__class)&attributes(attributes)
+  section#at-a-glance.glance(class=spec.__class)&attributes(attributes)
     .container
       h2.title.title--gold 2018 At A Glance
       .glance__list

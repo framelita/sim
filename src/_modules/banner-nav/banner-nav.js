@@ -16,5 +16,9 @@ export default class BannerNav {
         scrollTop: scrollTop
       }, 1000);
     });
+
+    if ($('.js-banner-nav').length && window.location.hash) {
+      $(`.js-banner-nav[href="${window.location.hash}"]`).addClass('is-active').siblings().removeClass('is-active');
+    }
   }
 }

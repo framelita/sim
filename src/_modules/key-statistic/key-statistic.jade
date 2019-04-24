@@ -2,7 +2,7 @@ mixin key-statistic(spec)
   - spec = spec || {}
   - spec.__class = spec.__class || ''
 
-  .key-statistic#key-statistics(class=spec.__class)&attributes(attributes)
+  section#key-statistics.key-statistic(class=spec.__class)&attributes(attributes)
     .key-statistic__numbergroup.bg--gold3.pt-20.pb-20
       .container
         h2.title.title--gold 2018 Key Statistics
