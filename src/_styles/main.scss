@@ -2,6 +2,7 @@
 @import 'node_modules/normalize.css/normalize';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Open+Sans:300,400,400i,700,700i');
 @import 'node_modules/slick-carousel/slick/slick.scss';
+@import 'node_modules/flexboxgrid-sass/flexboxgrid';
 
 // Import Modules
 @import '_variables';
@@ -71,6 +72,10 @@ a {
 .title--white,
 .text--white {
   color: #fff;
+}
+
+.t--green {
+  color: $simGreen;
 }
 
 button {
@@ -163,5 +168,27 @@ button {
 
   img {
     margin: 0 auto 5px;
+  }
+}
+
+.figure {
+  width: 100%;
+  margin: 0;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  figcaption {
+    padding: 10px;
+    font-size: 0.875rem;
+  }
+
+  &--green {
+    figcaption {
+      background: $simGreen;
+      color: #fff;
+    }
   }
 }
