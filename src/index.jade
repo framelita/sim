@@ -3,10 +3,12 @@ extends _layouts/base
 include _modules/header/header
 include _modules/footer/footer
 include _modules/home-banner/home-banner
+include _modules/banner-nav/banner-nav
 
 block content
   +header()
   main.main
+    +banner-nav()
     each item in site.data.home
       +home-banner(item)
   +footer()

@@ -9,6 +9,7 @@
 @import '../_modules/footer/footer';
 
 @import '../_modules/home-banner/home-banner';
+@import '../_modules/banner-nav/banner-nav';
 @import '../_modules/about-banner/about-banner';
 @import '../_modules/about-accordion/about-accordion';
 @import '../_modules/council-images/council-images';
@@ -95,6 +96,26 @@ img {
 
 .bg--gold3 {
   background: $gold3;
+}
+
+.bg--orange {
+  background: #fff1ec;
+}
+
+.bg--blue {
+  background: #e5f1f8;
+}
+
+.bg--darkblue {
+  background: #e7ebf4;
+}
+
+.bg--green {
+  background: #e6f1ee;
+}
+
+.bg--purple {
+  background: #eeeef3;
 }
 
 .pt-50 {

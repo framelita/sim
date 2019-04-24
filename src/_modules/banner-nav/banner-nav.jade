@@ -1,0 +1,7 @@
+mixin banner-nav(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  .banner-nav(class=spec.__class)&attributes(attributes)
+    each item, index in site.data.home
+      a.banner-nav__item.js-banner-nav(href='#' + item.id class=index==0 ? 'is-active' : '')
