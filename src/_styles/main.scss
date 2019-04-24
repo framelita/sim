@@ -141,7 +141,7 @@ img {
 }
 
 .bg--purple {
-  background: #e7ebf4;
+  background: #f3e9f4;
 }
 
 .pt-50 {
@@ -243,6 +243,15 @@ button {
       background: $simPurple;
       color: #fff;
     }
+  }
+}
+
+.figure-row {
+  .col-sm-6:first-child {
+    padding-right: 0;
+  }
+  .col-sm-6:last-child {
+    padding-left: 0;
   }
 }
 
