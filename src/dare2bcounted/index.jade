@@ -25,11 +25,110 @@ block content
             figure.figure.figure--gold
               img(src=baseUrl + 'images/counted-sim-1.jpg')
               figcaption Caption
-    .bg--gold3.pt-20.pb-20
+    .bg--gold4.pt-50.pb-50
       .container
         .row
-          .col-sm-8.col-sm-offset-4
-            p asdasd
+          .col-sm-9.col-sm-offset-3
+            table.counted-table(border="0" cellpadding="0" cellspacing="0")
+              thead
+                tr
+                  th Individual members
+                  th Number of members
+              tbody
+                tr
+                  td Honorary Fellow
+                  td 9
+                tr
+                  td Ordinary
+                  td 1,279
+                tr
+                  td Associate
+                  td 1,078
+                tr
+                  td Student
+                  td 32,648
+                tr
+                  td Silver (Retired)
+                  td 49
+                tr
+                  td
+                    strong Total
+                  td
+                    strong 35,063
+            table.counted-table(border="0" cellpadding="0" cellspacing="0")
+              thead
+                tr
+                  th Corporate members
+                  th Number of members
+              tbody
+                tr
+                  td Companies with 1-100 employees
+                  td 213
+                tr
+                  td Companies with 101-500 employees
+                  td 98
+                tr
+                  td Companies with 501-1,000 employees
+                  td 28
+                tr
+                  td Companies over 1,000 employees
+                  td 37
+                tr
+                  td
+                    strong Total
+                  td
+                    strong 376
+            h3.counted-title.t--gold SIM Honorary Fellows
+            .column-3
+              p Mr Wee Cho Yaw
+              p Mr Shaw Vee Meng
+              p Mr Pillay J Y
+              p Dr Richard Eu Keng Mun
+              p Mr Hochstadt Herman R
+              p Mr Ngiam Tong Dow
+              p Professor Cham Tao Soon
+              p Mr Hsieh Fu Hua
+              p Mr John Yip Soon Kwong
+            br
+            button(type="button").js-toggle.btn-toggle.btn-toggle-gold
+              img(src="../images/arrow-down.png")
+              span List of interest groups
+            .toggle-container.bg--gold5.interest-group-list
+              p
+                strong.t--gold Business Management Group <br>
+                strong Lee Beng Guat, Partner, Kam Boat Chinese Cuisine<br>
+                | To sharpen members' business management skills and help members optimise their professional performance and potential.
+              p
+                strong.t--gold Human Capital Interest Group <br>
+                strong Yap Mei Cheng, Managing Consultant, Nissi HR & OD Consultancy <br>
+                | To promote continuous learning and exchange of best practices in human capital management contextually in tandem with the changing business needs in a VUCA environment.
+              p
+                strong.t--gold Information Technology Group <br>
+                strong Tan Kow Wah, CEO, AKW International Pte Ltd <br>
+                | To provide a network for information exchange and promote the use of information technology in sharpening one’s competitive edge in the marketplace
+              p
+                strong.t--gold Innovation & Quality Management Group<br>
+                strong Chua Kok Leong, Marketing Director, ERA Realty Network Pte Ltd <br>
+                | To be the premier network of practitioners to embrace quality and innovative concepts and methodologies among organisations and individuals in Singapore.
+              p
+                strong.t--gold The Entrepreneurship & Strategic Management Group<br>
+                strong Michael Leong Yew Meng, Principal Consultant, Ideaz People<br>
+                | To promote keen leadership, entrepreneurship and strategic skills for that edge in business.
+              p
+                strong.t--gold SIM I Toastmasters Club <br>
+                strong Imeldawati Ahmad, HR Manager (SG & SEA), SP Jain School Of Global Management Pte Ltd<br>
+                | To help members sharpen their communication, presentation and leadership skills through enjoyable and interactive programmes.
+              p
+                strong.t--gold SIM II Toastmasters Club <br>
+                strong Dr Rosalind Ho, Dental Surgeon, Shenton Dental Surgery<br>
+                | To help members sharpen their communication, presentation and leadership skills through enjoyable and interactive programmes.
+              p
+                strong.t--gold SIM Mandarin Toastmasters Club<br>
+                strong Ms Apple Lin, School Teacher, PAT House<br>
+                | To help members sharpen their communication, presentation and leadership skills through enjoyable and interactive programmes.
+              button(type="button").btn-close.js-close-toggle
+                img(src="../images/close.png")
+                span Close
     .bg--green.pb-50
       .container
         .row

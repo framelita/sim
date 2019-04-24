@@ -129,6 +129,14 @@ img {
   background: $gold3;
 }
 
+.bg--gold4 {
+  background: $gold4;
+}
+
+.bg--gold5 {
+  background: $gold5;
+}
+
 .bg--orange {
   background: #fff1ec;
 }
@@ -354,6 +362,16 @@ button {
   }
 }
 
+.column-3 {
+  column-count: 3;
+  column-gap: 2rem;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
 .col-sm-6 {
   *:first-child {
     margin-top: 0;
@@ -367,4 +385,43 @@ button {
     margin-top: 0;
     margin-bottom: 20px;
   }
+}
+
+.counted-table {
+  width: 100%;
+  margin-bottom: 40px;
+
+  th {
+    font-weight: bold;
+    color: $gold;
+    font-size: 1.125rem;
+    border-bottom: 3px solid $gold;
+  }
+
+  td {
+    border-bottom: 2px solid $bodyColor;
+  }
+
+  th,
+  td {
+    padding: 5px 0;
+    text-align: left;
+
+    &:last-child {
+      width: 20%;
+      min-width: 200px;
+    }
+  }
+}
+
+.counted-title {
+  border-bottom: 3px solid $gold;
+  padding-bottom: 5px;
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+}
+
+.interest-group-list {
+  padding: 10px 20px 20px;
+  margin-top: 10px;
 }

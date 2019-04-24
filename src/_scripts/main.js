@@ -40,7 +40,7 @@ $(() => {
   $('.js-close-toggle').on('click', function() {
     let $this = $(this);
 
-    $this.closest('.toggle-container').slideUp();
+    $this.closest('.toggle-container').slideUp().prev().removeClass('is-active');
   });
 
   function debounce(func, wait, immediate) {
