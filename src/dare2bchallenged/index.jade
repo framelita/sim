@@ -3,6 +3,7 @@ extends ../_layouts/base
 include ../_modules/header/header
 include ../_modules/footer/footer
 include ../_modules/dare2b-banner/dare2b-banner
+include ../_modules/video-player/video-player
 
 block config
   //- Correct base url pathing for this page
@@ -23,6 +24,16 @@ block content
             figure.figure.figure--blue
               img(src=baseUrl + 'images/challenged-professional-1.jpg')
               figcaption Caption
+        .row
+          .col-sm-8.col-sm-offset-4
+            +video-player({
+              caption: 'Singapore Management Festival 2018 Highlights'
+            })
+        .row
+          .col-sm-8
+            +video-player({
+              caption: 'Ms Roshini Ganesan, Manager and Partner, The Change Business and LOA Centre SG'
+            })
     .bg--blue.pt-20.pb-50
       .container
         h2.title.t--blue INSPIRING TRANSFORMATION
@@ -59,6 +70,11 @@ block content
     .bg--white.pt-50.pb-50
       .container
         .row
+          .col-sm-8
+            +video-player({
+              caption: 'The Straits Times-SIM Forum DisruptED - Highlights'
+            })
+        .row
           .col-sm-6
             h2.title.t--green.mt-0 REWRITING THE RULES
             p In a world disrupted by technological advancements, education must continue to adapt and evolve to equipped learners to take on challenges in an ever-changing world. This was the focus of the inaugural ‘DisruptED’, the Straits Times-SIM Forum on Disruptions in Education. Dr Janil Puthucheary, Senior Minister of State for Education, and Communications and Information, gave the introduction at the forum which was attended by over 350 guests comprising educators, students and parents. This was followed by panel discussions with the audience led by local and international education experts, including Ben Nelson from the famed Minerva college.
@@ -76,5 +92,10 @@ block content
           p According to a report by the United Nations, the world population is expected to reach 9.8 billion by 2050, putting tremendous pressure for more sustainable food production as well as more effective food distribution and waste management.  At the same time, growing prevalence of health issues such as diabetes and obesity across the world pose a challenge for healthier food options.
           p To address this global issue, Platform E (PE) founded and is the inaugural Chairman of FEED 9 Billion (F9B), a coalition formed to cultivate and facilitate innovations in food science and technology, and to address disruption in the food industry for start-ups and enterprises. F9B is a quadripartite partnership with Temasek Polytechnic, Innovate 360 (Singapore’s first food manufacturing accelerator) and FocusTech Ventures.
           p The partnership took off with an inaugural Food Entrepreneurship, Exploration & Design (FEED) Camp. The camp gathered innovators and researchers from multinational corporations, and entrepreneurs to develop innovative ideas in food technology. Two of the participants from the FEED camp are planning to launch their ventures and food products in 2019. As a follow-through to the FEED Camp, aspiring entrepreneurs can join PE’s Food Innovation Programme in 2019 to gain a deep understanding of the global food ecosystem and receive training and leverage F9B’s ecosystem to get their innovative ideas ready for market.
+        .row
+          .col-sm-8
+            +video-player({
+              caption: 'FEED Camp 2018'
+            })
 
   +footer()

@@ -3,6 +3,7 @@ extends ../_layouts/base
 include ../_modules/header/header
 include ../_modules/footer/footer
 include ../_modules/dare2b-banner/dare2b-banner
+include ../_modules/video-player/video-player
 
 block config
   //- Correct base url pathing for this page
@@ -29,6 +30,11 @@ block content
               figcaption Caption
     .bg--green
       .container
+        .row
+          .col-sm-8
+            +video-player({
+              caption: 'Project 1095 - Student Life @ SIM GE'
+            })
         h2.title.t--green FOR ART’S SAKE
         .column-2
           p Arts and cultural activities provided students with a platform to express their individuality, cultivate cultural awareness, and hone their artistic and leadership skills. To put the science into the arts, we introduced a developmental framework among all the 11 arts and cultural student clubs, benefitting more than 700 students. Not only did our students acquire the necessary soft skills to enhance their employability, the quality of their performances improved too.
@@ -63,6 +69,11 @@ block content
               figcaption Caption
     .bg--green.pt-20
       .container
+        .row
+          .col-sm-8
+            +video-player({
+              caption: 'Mr Ow Jia Ming'
+            })
         h2.title.t--green GETTING UP CLOSE
         .column-2
           p SIM GE also organised a number of business competitions and other events that gave students opportunities to gain real-world global and business perspectives. Through these, they also built up public speaking, communication and negotiation skills.

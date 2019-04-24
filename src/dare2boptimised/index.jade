@@ -3,6 +3,7 @@ extends ../_layouts/base
 include ../_modules/header/header
 include ../_modules/footer/footer
 include ../_modules/dare2b-banner/dare2b-banner
+include ../_modules/video-player/video-player
 
 block config
   //- Correct base url pathing for this page
@@ -95,6 +96,12 @@ block content
             figure.figure.figure--lavender
               img(src=baseUrl + 'images/optimised-scia-1.jpg')
               figcaption Caption
+        .row
+          .col-sm-8
+            +video-player({
+              caption: 'SCIA Primary School Christmas concert'
+            })
+
 
     .bg--orange.pt-50.pb-50
       .container
@@ -133,6 +140,11 @@ block content
         .row
           .col-sm-6
             h2.title.t--purple HELPING ENTREPRENEURS TALK BUSINESS
+        .row
+          .col-sm-8
+            +video-player({
+              caption: 'Mr Poon Da Qian'
+            })
         .column-2
           p Platform E’s (PE) graduated its first cohort of 21 participants in April and had 16 budding entrepreneurs enrolled in its entrepreneurship programme as at December 2018. Of these 37 entrepreneurs, 14 startups have been established, more than $2m have been successfully raised from investors, and eight have also started earning revenue.
           p An open demo day was organised and PE's participants competed with other start-ups to pitch their business ideas to a panel of angel investors and venture capitalist companies. Two of PE's participants won the first and second runner-up prizes, and the first runner-up subsequently won a pitch contest in South Korea.

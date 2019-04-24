@@ -1,0 +1,13 @@
+mixin video-player(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.iframe = spec.iframe || ''
+  - spec.ïmage = spec.ïmage || 'http://placehold.it/800x450'
+  - spec.caption = spec.caption || 'Caption'
+
+  .video-player(class=spec.__class data-iframe=spec.iframe)&attributes(attributes)
+    button.video-player__button(type="button")
+      img(src="../images/arrow-right.png")
+    img.video-player__image(src=spec.image)
+    .video-player__caption=spec.caption
+    .video-player__player

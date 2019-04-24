@@ -3,6 +3,7 @@ extends ../_layouts/base
 include ../_modules/header/header
 include ../_modules/footer/footer
 include ../_modules/dare2b-banner/dare2b-banner
+include ../_modules/video-player/video-player
 
 block config
   //- Correct base url pathing for this page
@@ -60,9 +61,16 @@ block content
             figure.figure.figure--green
               img(src=baseUrl + 'images/counted-global-4.jpg')
               figcaption Caption
-    .bg--green.pt-20.pb-50
+    .bg--green.pt-50.pb-50
       .container
-        h2.title.t--green LEARNED AND LEARNING TO IMPACT
+        .row
+          .col-sm-6
+            h2.title.t--green LEARNED AND LEARNING TO IMPACT
+        .row
+          .col-sm-8
+            +video-player({
+              caption: 'Ms Deborah Lim, SIM Global Education Associate Lecturer'
+            })
         .column-2
           p At SIM we value our faculty members whose dedication to sharing their knowledge and experiences has a direct and positive impact on our students. To help our faculty members continue to update their knowledge and teaching pedagogies and be role models of lifelong learning, we organised different professional training platforms and introduced various resources to support their work.
           p To enhance the educational experience of our students in a digital age, we have embarked on online and blending learning. SIM GE partnered DioWorks and Surge Consulting to organise blended coaching workshops for our lecturers. Lecturers were also introduced to the possibilities of implementing chatbots to inspire students to do self-directed learning.
@@ -79,7 +87,7 @@ block content
               img(src=baseUrl + 'images/counted-global-6.jpg')
               figcaption Caption
 
-    .bg--gold3.pt-20.pb-20
+    .bg--gold3.pt-50.pb-20
       .container
         .row
           .col-sm-6
