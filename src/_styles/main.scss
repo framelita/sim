@@ -99,6 +99,10 @@ a {
   color: $simPurple;
 }
 
+.t--gold {
+  color: $gold;
+}
+
 button {
   font-family: 'Open Sans', sans-serif;
 }
@@ -196,6 +200,10 @@ button {
   width: 100%;
   margin: 1em 0 0;
 
+  &:first-child {
+    margin-top: 0;
+  }
+
   & + .figure {
     margin-top: 0;
   }
@@ -241,6 +249,13 @@ button {
   &--purple {
     figcaption {
       background: $simPurple;
+      color: #fff;
+    }
+  }
+
+  &--gold {
+    figcaption {
+      background: $gold;
       color: #fff;
     }
   }
