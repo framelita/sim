@@ -4,7 +4,7 @@ mixin dare2b-banner(spec)
   - spec.title = spec.title || ''
   - spec.text = spec.text || ''
 
-  .dare2b-banner(class=spec.bannerclass style="background-color:#{spec.color};")&attributes(attributes)
+  .dare2b-banner(class=spec.bannerclass data-scroll style="background-color:#{spec.color};")&attributes(attributes)
     .dare2b-banner__image(style="background-image:url(../#{spec.image});")
     .container
       .dare2b-banner__content
