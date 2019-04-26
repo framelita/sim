@@ -7,7 +7,7 @@
   {
     "title": "March",
     "text": "SIM Global Education partnered SGTech to provide internship and employment opportunities for students",
-    "image": "http://placehold.it/300x200"
+    "image": "../images/glance-march.jpg"
   },
   {
     "title": "April",
@@ -16,7 +16,7 @@
   },
   {
     "text": "Official opening of the UOL - SIM Global Education Regional Centre at SIM",
-    "image": "http://placehold.it/300x200"
+    "image": "../images/glance-april.jpg"
   },
   {
     "title": "May",
@@ -26,25 +26,25 @@
   {
     "title": "July",
     "text": "Official opening of SIM's first Representative Office in Jakarta, Indonesia",
-    "image": "http://placehold.it/300x200"
+    "image": "../images/glance-july-1.jpg"
   },
   {
     "text": "SIM Global Education partnered Singapore FinTech Association to provide internships and talent development programmes for students",
-    "image": "http://placehold.it/300x200"
+    "image": "../images/glance-july-2.jpg"
   },
   {
     "text": "SIM awarded 30 scholarships and sponsorships worth $387,000",
-    "image": "http://placehold.it/300x200"
+    "image": "../images/glance-july-3.png"
   },
   {
     "title": "August",
     "text": "Commencement of classes for inaugural cohort of students at Singapore (Cambodia) International Academy",
-    "image": ""
+    "image": "../images/glance-august.jpg"
   },
   {
     "title": "September",
     "text": "The 4th edition of Singapore Management Festival attracted over 400 participants",
-    "image": ""
+    "image": "../images/glance-september.jpg"
   },
   {
     "title": "October",
@@ -53,7 +53,7 @@
   },
   {
     "text": "Platform E partnered Temasek Polytechnic, Innovate 360 and FocusTech Ventures on FEED 9 Billion initiative",
-    "image": "http://placehold.it/300x200"
+    "image": "../images/glance-october.jpg"
   },
   {
     "title": "November",
@@ -62,6 +62,6 @@
   },
   {
     "text": "SIM Global Education signed MOU with OneConnect Financial Technology (part of the Ping An conglomerate) to provide students with one-year fintech course, internships and employment opportunities",
-    "image": "http://placehold.it/300x200"
+    "image": "../images/glance-november.jpg"
   }
 ]

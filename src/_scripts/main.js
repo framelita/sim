@@ -15,6 +15,8 @@ import SummaryBanner from '../_modules/summary-banner/summary-banner';
 import Glance from '../_modules/2018-glance/2018-glance';
 import KeyStatistic from '../_modules/key-statistic/key-statistic';
 
+import objectFitImages from 'object-fit-images';
+
 $(() => {
   new Header();
   new HomeBanner();
@@ -25,6 +27,8 @@ $(() => {
   new SummaryBanner();
   new Glance();
   new KeyStatistic();
+
+  objectFitImages();
 
   $('.js-toggle').on('click', function() {
     let $this = $(this),

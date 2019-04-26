@@ -14,6 +14,7 @@ head
   meta(name='description', content= 'A new Yeogurt application')
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
   block stylesheets
+    link(href=baseUrl + "styles/jquery.fancybox.min.css" rel="stylesheet")
     link(rel='stylesheet', href= baseUrl + 'styles/main.css')
 
 body
@@ -24,6 +25,8 @@ body
   block content
 
   block scripts
+    script( src="https://code.jquery.com/jquery-3.4.0.slim.min.js" integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI=" crossorigin="anonymous")
+    script(src=baseUrl + "scripts/jquery.fancybox.min.js")
     script(src= baseUrl + 'scripts/main.js')
 
 </html>
