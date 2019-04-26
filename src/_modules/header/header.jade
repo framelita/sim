@@ -10,7 +10,7 @@ mixin header(spec)
       ul.header__navigation
         each item in site.data.navigation
           li.header__item
-            a.header__link(href=spec.baseUrl+item.link)=item.text
+            a.header__link(href=spec.baseUrl+item.link target=item.newtab ? '_blank' : '_self')=item.text
             if item.menu
               ul.header__dropdown
                 each child in item.menu
