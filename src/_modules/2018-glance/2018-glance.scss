@@ -91,6 +91,7 @@
 }
 
 .glance__item {
+  max-width: 320px;
   vertical-align: top;
   padding: 0 10px;
   border-left: 2px solid $gold;
@@ -98,7 +99,17 @@
   height: 100%;
   font-size: 0.875rem;
   white-space: normal;
-  display: inline-block;
+  display: none;
+
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3) {
+    display: inline-block;
+  }
+
+  .slick-slide & {
+    max-width: none;
+  }
 
   &::after {
     content: '';
