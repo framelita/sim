@@ -372,6 +372,10 @@ button {
   *:first-child {
     margin-top: 0;
   }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .column-3 {
@@ -381,6 +385,10 @@ button {
   p {
     margin-top: 0;
     margin-bottom: 10px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -411,7 +419,7 @@ button {
   }
 
   td {
-    border-bottom: 2px solid $bodyColor;
+    border-bottom: 1px solid $bodyColor;
   }
 
   th,
