@@ -6,6 +6,7 @@
 
 .key-statistic__item {
   flex: 1 20%;
+  padding: 0 5px;
   max-width: 220px;
 
   .numbers {
@@ -13,7 +14,7 @@
     position: relative;
     background: $gold;
     color: #fff;
-    height: 220px;
+    height: 200px;
 
     &::before,
     &::after {
@@ -40,11 +41,6 @@
     span {
       display: block;
       line-height: 1.1;
-    }
-
-    .text {
-      font-size: 1.375rem;
-      height: 25px;
     }
 
     .number {
@@ -97,6 +93,10 @@
     display: block;
   }
 
+  .animate {
+    display: inline-block;
+  }
+
   .column {
     padding: 0 5px;
     text-align: center;
@@ -147,14 +147,6 @@
 .key-statistic__table {
   color: #fff;
 
-  td {
-    width: 20%;
-
-    &:first-child {
-      min-width: 400px;
-    }
-  }
-
   th,
   td {
     text-align: center;
@@ -170,9 +162,14 @@
   }
 
   td {
-    color: $gold;
+    color: $bodyColor;
+    width: 20%;
     border-bottom: 1px solid $gold;
     padding: 5px 10px;
+
+    &:first-child {
+      min-width: 400px;
+    }
   }
 
   .thead--title {
