@@ -15,7 +15,7 @@ mixin council-committees(spec)
           p.title.title--gold Members
           each member in item.member
             p=member
-          if item.external
+          if item.external != ''
             p.title.title--gold External Members
             each member in item.external
               p=member

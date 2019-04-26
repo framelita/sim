@@ -37,6 +37,10 @@
     background: #fff;
   }
 
+  .bg--white & {
+    background: $lightGrey;
+  }
+
   strong {
     font-weight: bold;
     color: $gold;

@@ -70,6 +70,10 @@ a {
   font-size: 1.5rem;
 }
 
+.bigger {
+  font-size: 1.125rem;
+}
+
 .title--gold {
   color: $gold;
 }
@@ -102,6 +106,10 @@ a {
 
 .t--gold {
   color: $gold;
+}
+
+.t--grey {
+  color: $grey;
 }
 
 button {
@@ -206,6 +214,10 @@ button {
 
   img {
     margin: 0 auto 5px;
+  }
+
+  span {
+    display: none;
   }
 }
 
@@ -424,4 +436,8 @@ button {
 .interest-group-list {
   padding: 10px 20px 20px;
   margin-top: 10px;
+}
+
+.smaller {
+  font-size: 0.875rem;
 }

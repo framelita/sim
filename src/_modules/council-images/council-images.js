@@ -11,6 +11,12 @@ export default class CouncilImages {
         index = $parent.data('index'),
         $content = $container.find(`.council-images__content[data-index="${index}"]`);
 
+      if ($parent.hasClass('is-active')) {
+        $content.find('.js-close-council').trigger('click');
+        console.log('close')
+        return false;
+      }
+
       let position = $this.position(),
         selectedIndex = $container.find('.council-images__item').length - 1,
         previousIndex = null,
@@ -29,7 +35,7 @@ export default class CouncilImages {
 
       // console.table({hasOpen, previousIndex, index, selectedIndex});
 
-      if (!$this.hasClass('is-active')) {
+      if (!$parent.hasClass('is-active')) {
         $parent.addClass('is-active').siblings().removeClass('is-active');
 
         if (hasOpen) {

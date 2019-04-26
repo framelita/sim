@@ -23,6 +23,8 @@
   position: relative;
   cursor: pointer;
   transition: opacity 0.15s ease-in-out;
+  position: relative;
+  z-index: 2;
 
   &:hover {
     opacity: 0.9;
@@ -42,6 +44,8 @@
   display: none;
   background: $gold4;
   height: calc(100% - 80px);
+  padding-bottom: 50px;
+  position: relative;
 
   .title {
     font-size: 1.125rem;
@@ -57,6 +61,8 @@
 }
 
 .council-committees__close {
-  margin-top: 10px;
-  margin-left: -10px;
+  margin: 0;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
 }
