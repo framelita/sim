@@ -81,6 +81,10 @@
   background-repeat: no-repeat;
   max-width: 1080px;
   margin: 0 auto;
+
+  .is-reversed & {
+    background-position: left center;
+  }
 }
 
 .dare2b-banner__content {
@@ -89,6 +93,10 @@
   line-height: 1.4;
   position: relative;
   z-index: 2;
+
+  .is-reversed & {
+    margin-left: auto;
+  }
 }
 
 .dare2b-banner__text {

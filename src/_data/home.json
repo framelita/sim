@@ -33,7 +33,7 @@
     "__class": "is-reversed",
     "link": "dare2bchallenged",
     "color": "#151e29",
-    "bannerclass": "dare2b-banner--challenged"
+    "bannerclass": "dare2b-banner--challenged is-reversed"
   },
   {
     "title": "dare2b<strong>COUNTED</strong>",
