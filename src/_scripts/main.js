@@ -68,7 +68,7 @@ $(() => {
           pageYOffset = window.pageYOffset,
           headerHeight = $('header').outerHeight();
         if (
-          sectionTop < pageYOffset + headerHeight
+          sectionTop < pageYOffset + headerHeight + 10
           && sectionTop + $this.outerHeight() > pageYOffset + headerHeight
         ) {
           history.pushState(null, null, `#${$this.attr('id')}`);

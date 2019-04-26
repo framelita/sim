@@ -2,30 +2,30 @@ mixin key-statistic(spec)
   - spec = spec || {}
   - spec.__class = spec.__class || ''
 
-  section#key-statistics.key-statistic(class=spec.__class)&attributes(attributes)
+  section#key-statistics.key-statistic(data-scroll class=spec.__class)&attributes(attributes)
     .key-statistic__numbergroup.bg--gold3.pt-20.pb-20
       .container
         h2.title.title--gold 2018 Key Statistics
         .key-statistic__numbers
           .column
-            span.number <span class="animate">0.3</span>%
+            span.number <span class="js-animate-number animate" data-decimal="1" data-speed="500">0.3</span>%
             span.name Growth
           .column
-            span.number $<span class="animate">237.5</span>m
+            span.number $<span class="js-animate-number animate" data-decimal="1">237.5</span>m
             span.name Revenue
     .bg--white.pt-50.pb-20
       .container
         .key-statistic__group
           .key-statistic__item
             .numbers
-              span.number 35,439
+              span.number.js-animate-number 35,439
               span.desc Members
             .info
               p <strong>35,063</strong> Individual Members
               p <strong>376</strong> Corporate Members
           .key-statistic__item
             .numbers
-              span.number 18,209
+              span.number.js-animate-number 18,209
               span.desc Students Enrolled
             .info
               p <strong>SIM Global Education</strong> 18,000 students | Over 80 programmes offered
@@ -33,13 +33,13 @@ mixin key-statistic(spec)
               p <strong>Singapore (Cambodia) International Academy</strong> 155 students
           .key-statistic__item
             .numbers
-              span.number 10,000
+              span.number.js-animate-number 10,000
               span.desc Professionals Trained
             .info
               p <strong>540</strong> executive and customised in-company training programmes organised
           .key-statistic__item
             .numbers
-              span.number 158,000
+              span.number.js-animate-number 158,000
               span.desc SIM Global Education Alumni
             .info
               p From over <strong>40</strong> countries
