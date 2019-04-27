@@ -10,11 +10,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include breakpoint(mobileonly) {
+      display: block;
+      line-height: 1.5;
+    }
   }
 }
 
 .footer__link {
   padding: 0 8px;
+  display: inline-block;
+
+  &:first-child {
+    padding-left: 0;
+  }
 
   &:hover {
     text-decoration: underline;
@@ -22,11 +32,20 @@
 }
 
 .footer__content {
+
+  @include breakpoint(mobileonly) {
+    margin-top: 0;
+  }
+
   .footer__link {
     border-left: 1px solid $bodyColor;
   }
   span {
     display: inline-block;
     padding: 0 8px;
+
+    &:first-child {
+      padding-left: 0;
+    }
   }
 }

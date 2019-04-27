@@ -26,6 +26,10 @@
   cursor: pointer;
   transition: height 0.15s ease-in-out;
 
+  @include breakpoint(nonlaptop) {
+    font-size: 1rem;
+  }
+
   .text {
     display: block;
     flex: 1 100%;

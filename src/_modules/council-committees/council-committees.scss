@@ -8,6 +8,17 @@
   border: 5px solid transparent;
   flex: 1 20%;
   max-width: 20%;
+  margin-bottom: 5px;
+
+  @include breakpoint(nonlaptop) {
+    flex: 1 25%;
+    max-width: 25%;
+  }
+
+  @include breakpoint(mobileonly) {
+    flex: 1 50%;
+    max-width: 50%;
+  }
 }
 
 .council-committees__title {
