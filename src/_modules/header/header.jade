@@ -7,6 +7,10 @@ mixin header(spec)
     .container
       a.header__logo(href=spec.baseUrl)
         img(src="#{spec.baseUrl}images/logo.jpg")
+      button.header__button.js-toggle-menu(type="button")
+        span.line.line--top
+        span.line.line--middle
+        span.line.line--bottom
       ul.header__navigation
         each item in site.data.navigation
           li.header__item

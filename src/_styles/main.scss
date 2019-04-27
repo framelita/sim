@@ -8,6 +8,7 @@ $gutter-width: 2rem;
 
 // Import Modules
 @import '_variables';
+@import '_mixins';
 @import '../_modules/header/header';
 @import '../_modules/footer/footer';
 
@@ -55,6 +56,10 @@ a {
 .main {
   padding-top: 92px;
   min-height: 100vh;
+
+  @include breakpoint(nonlaptop) {
+    padding-top: 68px;
+  }
 }
 
 .title {

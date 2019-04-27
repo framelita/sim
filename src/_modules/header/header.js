@@ -43,5 +43,9 @@ export default class Header {
         scrollTop: scrollTop
       }, 1000);
     }
+
+    $('.js-toggle-menu').on('click', function() {
+      $(this).toggleClass('is-active');
+    });
   }
 }

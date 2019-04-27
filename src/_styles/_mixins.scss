@@ -14,4 +14,7 @@
   @else if $point == mobileonly {
     @media (max-width: 37.5em)  { @content ; }
   }
+  @else if $point == nonlaptop {
+    @media (max-width: 64em)  { @content ; }
+  }
 }
