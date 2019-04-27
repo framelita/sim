@@ -15,6 +15,29 @@
       justify-content: flex-end;
     }
   }
+
+  @include breakpoint(nonlaptop) {
+    min-height: calc(100vh - 68px);
+    background-position: center top;
+    background-size: auto 55%;
+    align-items: center;
+
+    .container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &.is-reversed {
+      background-position: center top;
+      .container {
+        display: block;
+      }
+    }
+  }
+
+  @include breakpoint(mobileonly) {
+    background-size: auto 200px;
+  }
 }
 
 .home-banner__title {
@@ -25,6 +48,10 @@
   font-size: 2rem;
   font-family: 'Open Sans Condensed', sans-serif;
   overflow: hidden;
+
+  @include breakpoint(mobileonly) {
+    font-size: 1.75rem;
+  }
 
   .text,
   .hashtag {
@@ -69,11 +96,26 @@
   color: #fff;
   width: 50%;
   line-height: 1.4;
+
+  @include breakpoint(nonlaptop) {
+    width: 450px;
+    max-width: 100%;
+    margin-top: 70%;
+  }
+
+  @include breakpoint(mobileonly) {
+    margin-top: 180px;
+  }
 }
 
 .home-banner__text {
   max-width: 400px;
   text-shadow: 0 0 10px #000;
+
+  @include breakpoint(nonlaptop) {
+    max-width: 450px;
+    padding-right: 30px;
+  }
 }
 
 .home-banner__video {
