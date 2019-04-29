@@ -11,6 +11,10 @@ export default class CouncilImages {
         index = $parent.data('index'),
         $content = $container.find(`.council-images__content[data-index="${index}"]`);
 
+      if ($content.length == 0) {
+        return false;
+      }
+
       if ($parent.hasClass('is-active')) {
         $content.find('.js-close-council').trigger('click');
         console.log('close')
@@ -68,7 +72,7 @@ export default class CouncilImages {
       $container.find('.council-images__item').removeClass('is-active');
       $container.find(`.council-images__content[data-index="${previousIndex}"]`).slideUp(400, function() {
         $(this).appendTo($container.find(`.council-images__item[data-index="${previousIndex}"]`));
-      })
+      });
     });
   }
 }

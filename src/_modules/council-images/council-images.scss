@@ -19,6 +19,13 @@
     flex: 1 50%;
     max-width: 50%;
   }
+
+  &.no-content {
+    .council-images__image,
+    .council-images__title {
+      cursor: auto;
+    }
+  }
 }
 
 .council-images__image {
@@ -33,6 +40,10 @@
 
   .is-active & {
     font-weight: bold;
+  }
+
+  .smaller {
+    font-size: 0.75rem;
   }
 }
 
@@ -54,6 +65,11 @@
   strong {
     font-weight: bold;
     color: $gold;
+  }
+
+  .date {
+    margin-top: -20px;
+    display: block;
   }
 }
 
