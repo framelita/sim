@@ -2,12 +2,17 @@
 .key-statistic__group {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .key-statistic__item {
   flex: 1 20%;
   padding: 0 5px;
   max-width: 220px;
+
+  @include breakpoint(mobileonly) {
+    flex: 1 50%;
+  }
 
   .numbers {
     padding: 30px 10px;
@@ -46,6 +51,10 @@
     .number {
       font-size: 3rem;
       font-weight: bold;
+
+      @include breakpoint(nonlaptop) {
+        font-size: 2rem;
+      }
     }
 
     .desc {
@@ -53,6 +62,14 @@
       text-transform: uppercase;
       font-weight: bold;
       font-size: 1.5rem;
+
+      @include breakpoint(nonlaptop) {
+        font-size: 1.25rem;
+      }
+
+      @include breakpoint(mobileonly) {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -70,10 +87,14 @@
   .container {
     display: flex;
     justify-content: space-between;
+
+    @include breakpoint(mobileonly) {
+      display: block;
+    }
   }
 
   .title {
-    margin-top:0;
+    margin-top: 0;
   }
 }
 
@@ -88,6 +109,10 @@
   flex-wrap: wrap;
   max-width: 500px;
   line-height: 1;
+
+  @include breakpoint(nonlaptop) {
+    font-size: 2rem;
+  }
 
   span {
     display: block;
@@ -146,6 +171,11 @@
 
 .key-statistic__table {
   color: #fff;
+  overflow: auto;
+
+  table {
+    min-width: 500px;
+  }
 
   th,
   td {
@@ -169,6 +199,10 @@
 
     &:first-child {
       min-width: 400px;
+
+      @include breakpoint(mobileonly) {
+        min-width: 250px;
+      }
     }
   }
 
@@ -184,6 +218,7 @@
     border-bottom: 2px solid $gold;
   }
 }
+
 
 .council-table__footnote {
   color: $gold;

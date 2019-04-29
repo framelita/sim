@@ -8,6 +8,14 @@ export default class Glance {
     $('.glance__list').slick({
       slidesToShow: 3,
       infinite: false,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+      ]
     });
   }
 }

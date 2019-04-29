@@ -12,6 +12,11 @@
   background-repeat: no-repeat;
   background-image: url('../images/bg-management.jpg');
   overflow: hidden;
+
+  @include breakpoint(mobileonly) {
+    padding: 20px 0;
+    align-items: flex-start;
+  }
 }
 
 .summary-banner__content {
@@ -56,6 +61,16 @@
   transform: translateX(100%);
 }
 
+#chairmans-message {
+  .summary-banner__content-image {
+    @include breakpoint(mobileonly) {
+      width: 50%;
+      top: auto;
+      bottom: 0;
+    }
+  }
+}
+
 #management-report {
   .container {
     max-width: 700px;
@@ -63,6 +78,11 @@
 
   .summary-banner__image {
     height: 400px;
+
+    @include breakpoint(mobileonly) {
+      height: 200px;
+      padding: 0;
+    }
   }
 
   .summary-banner__image .container {
