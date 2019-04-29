@@ -7,6 +7,11 @@
   position: relative;
   border-bottom: 40px solid #fff;
 
+  @include breakpoint(mobileonly) {
+    height: auto;
+    min-height: 600px;
+  }
+
   &--optimised {
     border-bottom-color: #b37e62;
   }
@@ -32,6 +37,10 @@
   font-size: 2rem;
   font-family: 'Open Sans Condensed', sans-serif;
   overflow: hidden;
+
+  @include breakpoint(mobileonly) {
+    font-size: 1.75rem;
+  }
 
   .text,
   .hashtag {
@@ -82,8 +91,25 @@
   max-width: 1080px;
   margin: 0 auto;
 
+  @include breakpoint(nonlaptop) {
+    background-position: left center;
+  }
+
+  @include breakpoint(mobileonly) {
+    background-size: auto 200px;
+    background-position: center top;
+  }
+
   .is-reversed & {
     background-position: left center;
+
+    @include breakpoint(nonlaptop) {
+      background-position: -150px center;
+    }
+
+    @include breakpoint(mobileonly) {
+      background-position: center top;
+    }
   }
 }
 
@@ -94,6 +120,11 @@
   position: relative;
   z-index: 2;
 
+  @include breakpoint(mobileonly) {
+    width: 100%;
+    margin-top: 200px;
+  }
+
   .is-reversed & {
     margin-left: auto;
   }
@@ -101,6 +132,8 @@
 
 .dare2b-banner__text {
   max-width: 400px;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 .dare2b-banner__video {

@@ -305,11 +305,13 @@ button {
 }
 
 .figure-row {
-  .col-sm-6:first-child {
-    padding-right: 0;
-  }
-  .col-sm-6:last-child {
-    padding-left: 0;
+  @include breakpoint(phablet) {
+    .col-sm-6:first-child {
+      padding-right: 0;
+    }
+    .col-sm-6:last-child {
+      padding-left: 0;
+    }
   }
 }
 
@@ -387,6 +389,10 @@ button {
   column-gap: 2rem;
   margin: 1.5em 0 2em;
 
+  @include breakpoint(mobileonly) {
+    column-count: 1;
+  }
+
   *:first-child {
     margin-top: 0;
   }
@@ -399,6 +405,10 @@ button {
 .column-3 {
   column-count: 3;
   column-gap: 2rem;
+
+  @include breakpoint(mobileonly) {
+    column-count: 1;
+  }
 
   p {
     margin-top: 0;
@@ -448,6 +458,10 @@ button {
     &:last-child {
       width: 20%;
       min-width: 200px;
+
+      @include breakpoint(mobileonly) {
+        min-width: 110px;
+      }
     }
   }
 }
