@@ -69,6 +69,10 @@ a {
   font-size: 2rem;
   line-height: 1.2;
   margin-bottom: 5px;
+
+  @include breakpoint(mobileonly) {
+    font-size: 1.75rem;
+  }
 }
 
 .subtitle {
@@ -173,10 +177,18 @@ img {
 
 .pt-50 {
   padding-top: 50px;
+
+  @include breakpoint(mobileonly) {
+    padding-top: 30px;
+  }
 }
 
 .pb-50 {
   padding-bottom: 50px;
+
+  @include breakpoint(mobileonly) {
+    padding-bottom: 30px;
+  }
 }
 
 .pt-20 {

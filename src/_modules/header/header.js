@@ -25,10 +25,12 @@ export default class Header {
         lastPath = window.location.pathname.split('/').slice(-2)[0];
       }
 
-      console.log(hashtag, href, window.location.pathname, href.indexOf(lastPath));
       if (lastPath != '' &&  href.indexOf(lastPath) >= 0) {
         //if url is for current page
         let scrollTop = $(`#${hashtag}`).offset().top - $('.header').outerHeight();
+        if ($('.js-toggle-menu').hasClass('is-active')) {
+          $('.js-toggle-menu').removeClass('is-active');
+        }
         $('html, body').animate({
           scrollTop: scrollTop
         }, 1000);

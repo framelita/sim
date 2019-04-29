@@ -7,6 +7,10 @@
 .about-accordion__list {
   position: relative;
   padding-top: 140px;
+
+  @include breakpoint(mobileonly) {
+    padding-top: 0;
+  }
 }
 
 .about-accordion__button {
@@ -28,6 +32,15 @@
 
   @include breakpoint(nonlaptop) {
     font-size: 1rem;
+  }
+
+  @include breakpoint(mobileonly) {
+    width: 100%;
+    position: relative;
+    flex: 1 100%;
+    left: 0!important;
+    height: auto !important;
+    margin-top: 10px;
   }
 
   .text {
@@ -97,6 +110,10 @@
 .about-accordion__content {
   display: none;
   line-height: 1.4;
+
+  @include breakpoint(mobileonly) {
+    padding: 0 5px;
+  }
 
   &[data-target="global"] {
     strong {

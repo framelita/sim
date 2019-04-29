@@ -9,6 +9,10 @@
   align-items: center;
   padding: 80px 0;
 
+  @include breakpoint(mobileonly) {
+    padding: 40px 0;
+  }
+
   &::after {
     content: '';
     position: absolute;
