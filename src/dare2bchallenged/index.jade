@@ -26,18 +26,19 @@ block content
               figcaption Dato' Sri Idris Jala, former CEO of Malaysia Airlines, speaking about transformational leadership at the Singapore Management Festival.
 
         .row
-          .col-sm-8
+          .col-sm-8.col-xs-12
             +video-player({
               caption: 'Singapore Management Festival 2018 Highlights',
               image: baseUrl + 'images/challenged-video-1.jpg',
               iframe: 'https://www.youtube.com/watch?v=maLYDRyj1eE'
             })
         .row
-          .col-sm-8
+          .col-sm-8.col-xs-12
             +video-player({
               caption: 'Ms Roshini Ganesan, Manager and Partner, The Change Business and LOA Centre SG',
               image: baseUrl + 'images/Roshini.jpg',
-              iframe: baseUrl + 'videos/20190404-SIM Annual Report - Roshini - 03.mp4'
+              iframe: baseUrl + 'videos/20190404-SIM Annual Report - Roshini - 03.mp4',
+              __class: 'mt-0'
             })
     .bg--blue.pt-20.pb-50
       .container

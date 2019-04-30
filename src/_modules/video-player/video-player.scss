@@ -10,6 +10,10 @@
     content: '';
     display: block;
     padding-top: 47%;
+
+    @include breakpoint(mobileonly) {
+      padding-top: 65%;
+    }
   }
 
   &::before {
@@ -21,6 +25,10 @@
     height: 100px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
     z-index: 3;
+
+    @include breakpoint(mobileonly) {
+      height: 100%;
+    }
   }
 
   &.has-played {
