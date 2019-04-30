@@ -12,11 +12,17 @@ mixin council-committees(spec)
         .council-committees__content
           p.title.title--gold Chairman
           p=item.chairman
-          p.title.title--gold Members
+          if item.member.length > 1
+            p.title.title--gold Members
+          else
+            p.title.title--gold Member
           each member in item.member
             p=member
           if item.external != ''
-            p.title.title--gold External Members
+            if item.external.length > 1
+              p.title.title--gold External Members
+            else
+              p.title.title--gold External Member
             each member in item.external
               p=member
           button(type="button").js-close-committees.council-committees__close.btn-close
