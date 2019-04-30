@@ -26,8 +26,15 @@ body
   block content
 
   block scripts
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-17707429-6")
+    script
+      | window.dataLayer = window.dataLayer || [];
+      | function gtag(){dataLayer.push(arguments);}
+      | gtag('js', new Date());
+      | gtag('config', 'UA-17707429-6');
+
     script( src="https://code.jquery.com/jquery-3.4.0.slim.min.js" integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI=" crossorigin="anonymous")
     script(src=baseUrl + "scripts/jquery.fancybox.min.js")
     script(src= baseUrl + 'scripts/main.js')
-
 </html>
