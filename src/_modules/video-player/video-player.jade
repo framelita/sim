@@ -3,7 +3,7 @@ mixin video-player(spec)
   - spec.__class = spec.__class || ''
   - spec.iframe = spec.iframe || ''
   - spec.ïmage = spec.ïmage || 'http://placehold.it/800x450'
-  - spec.caption = spec.caption || 'Caption'
+  - spec.caption = spec.caption || ''
   - spec.newtab = spec.newtab || false
 
   if spec.newtab
@@ -11,10 +11,14 @@ mixin video-player(spec)
       img.video-player__image(src=spec.image)
       button.video-player__button(type="button")
         img(src="../images/arrow-right.png")
-      .video-player__caption=spec.caption
+      if spec.caption
+        .video-player__caption
+          span=spec.caption
   else
     a.video-player(class=spec.__class data-fancybox='' href=spec.iframe)&attributes(attributes)
       img.video-player__image(src=spec.image)
       button.video-player__button(type="button")
         img(src="../images/arrow-right.png")
-      .video-player__caption=spec.caption
+      if spec.caption
+        .video-player__caption
+          span=spec.caption

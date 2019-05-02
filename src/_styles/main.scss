@@ -481,3 +481,19 @@ button {
 .smaller {
   font-size: 0.875rem;
 }
+
+.footnote {
+  margin: 10px;
+  font-size: 0.875rem;
+  font-style: italic;
+
+  span {
+    display: inline-block;
+    vertical-align: top;
+    max-width: calc(100% - 40px);
+
+    &:first-child {
+      width: 25px;
+    }
+  }
+}
