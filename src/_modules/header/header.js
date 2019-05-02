@@ -19,13 +19,7 @@ export default class Header {
         href = $this.attr('href'),
         hashtag = href.split('#').pop();
 
-      let lastPath = window.location.pathname.split('/').slice(-1)[0];
-
-      if (lastPath == '') {
-        lastPath = window.location.pathname.split('/').slice(-2)[0];
-      }
-
-      if (lastPath != '' &&  href.indexOf(lastPath) >= 0) {
+      if ($(`#${hashtag}`).length) {
         //if url is for current page
         let scrollTop = $(`#${hashtag}`).offset().top - $('.header').outerHeight();
         if ($('.js-toggle-menu').hasClass('is-active')) {

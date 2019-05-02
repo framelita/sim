@@ -1,7 +1,7 @@
 // summary-banner styles
 .summary-banner__image {
   padding: 100px 0;
-  height: 500px;
+  height: 560px;
   display: flex;
   position: relative;
   justify-content: center;
@@ -69,20 +69,34 @@
       bottom: 0;
     }
   }
+
+  .summary-banner__content {
+    padding-left: 20px;
+
+    .title {
+      margin-left: -20px;
+    }
+  }
 }
 
 #management-report {
-  .container {
-    max-width: 700px;
-  }
 
   .summary-banner__image {
-    height: 400px;
+    height: 500px;
+    text-align: center;
+
+    .title {
+      text-align: left;
+    }
 
     @include breakpoint(mobileonly) {
       height: 200px;
       padding: 0;
     }
+  }
+
+  .summary-banner__image-column {
+    height: 100%;
   }
 
   .summary-banner__image .container {
@@ -99,7 +113,8 @@
 
   .summary-banner__content {
     max-width: none;
-    padding: 30px 0;
+    padding: 20px 0;
+    text-align: center;
 
     .column {
       padding: 0 20px;
@@ -112,6 +127,8 @@
     vertical-align: top;
     position: relative;
     height: 100%;
+    max-width: 360px;
+    text-align: left;
   }
 }
 
