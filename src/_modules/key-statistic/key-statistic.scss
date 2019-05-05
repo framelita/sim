@@ -153,10 +153,6 @@
     display: inline-block;
     vertical-align: top;
     max-width: calc(100% - 20px);
-
-    &:first-child {
-      width: 35px;
-    }
   }
 
   p {

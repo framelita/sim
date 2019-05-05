@@ -305,7 +305,7 @@ button {
 }
 
 .figure-row {
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     .col-sm-6:first-child {
       padding-right: 0;
     }
@@ -491,10 +491,11 @@ button {
   span {
     display: inline-block;
     vertical-align: top;
-    max-width: calc(100% - 40px);
+    max-width: calc(100% - 20px);
+  }
 
-    &:first-child {
-      width: 25px;
-    }
+  sup {
+    width: 15px;
+    display: inline-block;
   }
 }
