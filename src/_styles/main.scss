@@ -334,13 +334,14 @@ button {
   }
 
   img {
-    transform: rotate(-90deg);
+    transform: rotate(0);
     background: $gold;
+    transition: transform 0.15s ease-in-out;
   }
 
   &.is-active {
     img {
-      transform: rotate(0);
+      transform: rotate(-90deg);
     }
   }
 

@@ -13,28 +13,28 @@ mixin council-table(spec)
           th.thead--meeting(colspan="3") Meeting Attendance
         tr
           th.thead--title Name
-          th.thead--title Date of Appointment to SIM Governing Council**
-          th.thead--title SIM Governing Council Meetings*
+          th.thead--title Date of Appointment to SIM Governing Council<sup>2</sup>
+          th.thead--title SIM Governing Council Meetings<sup>1</sup>
           th.thead--title SIM Governing Council Committee Meetings
           th.thead--title Total
       tbody
         each item in site.data.counciltable
           tr
-            td=item.name
-            td=item.date
+            td!=item.name
+            td!=item.date
             td=item.council
             td=item.committee
             td=item.total
     .council-table__footnote
       p
-        span.asterisk *
+        span.asterisk <sup>1</sup>
         span Five SIM Governing Council meetings were held in FY2018.
       p
-        span.asterisk **
+        span.asterisk <sup>2</sup>
         span No SIM Governing Council member was remunerated for his/her service to the Council.
       p
-        span.asterisk ***
+        span.asterisk <sup>3</sup>
         span Mr Tan Soo Jin was co-opted from 2013-2014. There was one paid staff member, who received remuneration exceeding $50,000 during the financial year, who is a close family member of Mr Tan Soo Jin.
       p
-        span.asterisk ****
+        span.asterisk <sup>4</sup>
         span This is also the date of Mr Ronald Tan Hee Huan's appointment as Executive Director of Singapore Institute of Management.

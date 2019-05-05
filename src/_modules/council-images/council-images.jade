@@ -13,11 +13,8 @@ mixin council-images(spec)
             !=item.subtitle
         if item.content
           .council-images__content(data-index=index)
+            h3.council-images__name=item.name
+            div!=item.content
             button(type="button").js-close-council.council-images__close.btn-close
               img(src="../images/close.png")
               span Close
-            h3.council-images__name=item.name
-            div!=item.content
-            button.council-images__button.js-next-council(type="button")
-              img(src="../images/arrow-right.jpg")
-              span Next

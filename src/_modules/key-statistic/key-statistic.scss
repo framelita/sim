@@ -218,23 +218,3 @@
     border-bottom: 2px solid $gold;
   }
 }
-
-
-.council-table__footnote {
-  color: $gold;
-  margin: 10px;
-  font-size: 0.875rem;
-
-  span {
-    display: inline-block;
-    vertical-align: top;
-
-    &:first-child {
-      width: 35px;
-    }
-  }
-
-  p {
-    margin: 0;
-  }
-}
