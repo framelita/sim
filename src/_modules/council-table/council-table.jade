@@ -6,25 +6,26 @@ mixin council-table(spec)
     img(src="../images/arrow-down.png")
     span View
   .council-table__container.toggle-container
-    table.council-table(class=spec.__class border="0" cellpadding="0" cellspacing="0")&attributes(attributes)
-      thead
-        tr
-          th(colspan="2")
-          th.thead--meeting(colspan="3") Meeting Attendance
-        tr
-          th.thead--title Name
-          th.thead--title Date of Appointment to SIM Governing Council<sup>2</sup>
-          th.thead--title SIM Governing Council Meetings<sup>1</sup>
-          th.thead--title SIM Governing Council Committee Meetings
-          th.thead--title Total
-      tbody
-        each item in site.data.counciltable
+    .council-table
+      table(class=spec.__class border="0" cellpadding="0" cellspacing="0")&attributes(attributes)
+        thead
           tr
-            td!=item.name
-            td!=item.date
-            td=item.council
-            td=item.committee
-            td=item.total
+            th(colspan="2")
+            th.thead--meeting(colspan="3") Meeting Attendance
+          tr
+            th.thead--title Name
+            th.thead--title Date of Appointment to SIM Governing Council<sup>2</sup>
+            th.thead--title SIM Governing Council Meetings<sup>1</sup>
+            th.thead--title SIM Governing Council Committee Meetings
+            th.thead--title Total
+        tbody
+          each item in site.data.counciltable
+            tr
+              td!=item.name
+              td!=item.date
+              td=item.council
+              td=item.committee
+              td=item.total
     .council-table__footnote
       p
         sup 1

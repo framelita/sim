@@ -5,6 +5,34 @@
 
 .council-table {
   color: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: auto;
+
+  &::-webkit-scrollbar {
+    height: 8px !important;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.5) !important;
+    -webkit-border-radius: 8px !important;
+    border-radius: 8px !important;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 8px !important;
+    border-radius: 8px !important;
+    background: $gold !important;
+
+  }
+  &::-webkit-scrollbar-thumb:window-inactive {
+    background: $gold !important;
+  }
+
+  table {
+    min-width: 500px;
+  }
 
   td {
     width: 20%;
