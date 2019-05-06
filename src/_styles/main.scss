@@ -309,7 +309,7 @@ button {
     .col-sm-6:first-child {
       padding-right: 0;
     }
-    .col-sm-6:last-child {
+    .col-sm-6:last-child:not(:first-child) {
       padding-left: 0;
     }
   }
@@ -334,15 +334,7 @@ button {
   }
 
   img {
-    transform: rotate(0);
     background: $gold;
-    transition: transform 0.15s ease-in-out;
-  }
-
-  &.is-active {
-    img {
-      transform: rotate(-90deg);
-    }
   }
 
   &.btn-toggle-green {

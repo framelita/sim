@@ -146,7 +146,6 @@
   img {
     transform: rotate(90deg);
     position: relative;
-    transition: transform 0.15s ease-in-out;
   }
 
   &:hover {
@@ -155,12 +154,6 @@
 
   span {
     margin-left: 8px;
-  }
-
-  &.is-active {
-    img {
-      transform: rotate(0);
-    }
   }
 }
 
