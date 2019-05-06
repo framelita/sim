@@ -62,10 +62,11 @@
   span {
     display: inline-block;
     vertical-align: top;
-    max-width: calc(100% - 30px);
+    max-width: calc(100% - 20px);
+  }
 
-    &:first-child {
-      width: 20px;
-    }
+  sup {
+    width: 15px;
+    display: inline-block;
   }
 }
