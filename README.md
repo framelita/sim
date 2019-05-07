@@ -5,8 +5,9 @@ Generated on 2019-04-20 using
 
 ## Description
 
-This is an example readme file.
-Describe your site/app here.
+This is SIM Annual Report 2018 site.
+To generate the project, first run `npm install` then `gulp serve`. The html file will be in tmp folder.
+If it doesn't work, make sure node and npm are installed. To check, run `node -v` and `npm -v` in command line.
 
 ## Technologies used
 
