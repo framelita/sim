@@ -27,6 +27,20 @@
   &--counted {
     border-bottom-color: #bfe333;
   }
+
+  .no-flex-box & {
+    display: block;
+    position: relative;
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .dare2b-banner__title {
@@ -90,6 +104,7 @@
   background-repeat: no-repeat;
   max-width: 1080px;
   margin: 0 auto;
+  top: 0;
 
   @include breakpoint(nonlaptop) {
     background-position: left center;
@@ -98,6 +113,11 @@
   @include breakpoint(mobileonly) {
     background-size: auto 200px;
     background-position: center top;
+  }
+
+  .no-flex-box & {
+    right: 0;
+    left: 0;
   }
 
   .is-reversed & {

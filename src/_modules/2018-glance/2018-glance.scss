@@ -44,6 +44,10 @@
     overflow: hidden;
     transition: background 0.15s ease-in-out;
 
+    .no-flex-box & {
+      padding-top: 170px;
+    }
+
     &.slick-disabled {
       cursor: auto;
       background: $gold4;
@@ -100,6 +104,10 @@
   font-size: 0.875rem;
   white-space: normal;
   display: none;
+
+  .no-flex-box & {
+    height: 330px;
+  }
 
   &:nth-child(1),
   &:nth-child(2),

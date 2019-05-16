@@ -11,11 +11,21 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+
+    .no-flex-box & {
+      display: block;
+    }
   }
 }
 
 .corporate-information__content {
   flex: 1 50%;
+
+  .no-flex-box & {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+  }
 
   @include breakpoint(mobileonly) {
     flex: 1 100%;

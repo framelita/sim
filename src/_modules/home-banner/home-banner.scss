@@ -16,6 +16,20 @@
     }
   }
 
+  .no-flex-box & {
+    display: block;
+    position: relative;
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transform: translateY(-50%);
+    }
+  }
+
   @include breakpoint(nonlaptop) {
     min-height: calc(100vh - 68px);
     background-position: center top;

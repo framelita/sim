@@ -30,6 +30,10 @@ $(() => {
 
   objectFitImages();
 
+  if (!Modernizr.flexbox && !Modernizr.flexwrap) {
+    $('html').addClass('no-flex-box');
+  }
+
   $('.js-toggle').on('click', function() {
     let $this = $(this),
       $content = $this.next('.toggle-container');
